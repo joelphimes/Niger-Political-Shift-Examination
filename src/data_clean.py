@@ -90,6 +90,30 @@ class Clean:
         """
         df_without_missing = df.dropna()
         return df_without_missing
+    
+    def print_formatted_pvalues(results):
+        """
+        Prints the formatted p-values from the regression results.
+    
+        Args:
+        - results (Results object): The results object from the regression fit.
+    
+        Returns:
+        - None (prints the p-values).
+        """
+    
+        # Convert the p-value to a pandas Series for easy manipulation.
+        pvalues = pd.Series(results.pvalues)
 
+        # Format the p-values using the map method.
+        formatted_pvalues = pvalues.map('{:.11f}'.format)
+
+        # Print the formatted p-values.
+        print(formatted_pvalues)
+
+# Conditional check used to determine if the class/function is being run as a standalone program 
+# or if it has been imported as a module into another script. 
+# If it's standalone, the code inside the if block will execute. Otherwise, it won't.
+# In this case, nothing happens (indicated by 'pass') when the script is run as standalone.
 if __name__ == "__main__":
     pass
