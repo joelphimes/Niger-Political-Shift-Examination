@@ -19,7 +19,7 @@ Image Source:https://www.cnn.com/2018/05/10/politics/niger-american-troops-prese
 
 On 26 July 2023, Niger faced its fifth military coup since 1960. The presidential guard detained President Bazoum, and their commander general declared himself the new junta leader. The country's borders were closed, state institutions suspended, and a curfew was imposed.\
 \
-According to various sources, political instability, weak governance/corruption, economic troubles, factionalism, dissatisfaction within the military or military spending, weak democratic institutions, history of coups, and extreme poverty are chief indicators that drive coups.
+According to various sources, political instability, weak governance/corruption, economic troubles, factionalism, dissatisfaction within the military or military spending, weak democratic institutions, history of coups, and extreme poverty are chief indicators that drive coups. 
 
 Content Source: https://www.bbc.com/news/world-africa-66320895
 \
