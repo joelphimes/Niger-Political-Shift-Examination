@@ -30,6 +30,8 @@ Content Source: https://www.econstor.eu/bitstream/10419/156099/1/ile-wp-2016-3.p
 
 Image Source:https://www.nytimes.com/2023/07/27/world/africa/niger-coup-president-bazoum.html
 
+This is a detailed timeline of Niger's tumultuous journey over the span of nearly three decades, highlighting the country's political instability, characterized by coups and transitions in leadership.
+
 1996:\
 Army officers stage a coup overthrowing President Mahamane Ousmane and Prime Minister Hama Amadou in January, saying a political deadlock had threatened economic reforms, incurring the anger of former colonial power France.
 
@@ -63,7 +65,7 @@ Content Source: https://www.aljazeera.com/news/2023/7/27/timeline-a-history-of-c
 Image Source:https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger
 
 Analysis:\
-In 2023, Niger underwent a significant political shift that led to noticeable instability. Unraveling the factors driving this turbulence is vital for understanding Niger's trajectory and shaping policies that could foster stability in the region. This analysis revolves around six critical analytical goals:
+As mentioned above, in 2023, Niger underwent a significant political shift that led to noticeable instability. Unraveling the factors driving this turbulence is vital for understanding Niger's trajectory and shaping policies that could foster stability in the region. This analysis revolves around six analytical goals:
 
 (1) Niger Governance: Examine Three World Governance Indicators from 1996 to 2022  (26 years).\
 By examining the World Governance Indicators for 26 years (1996-2022), This analysis seeks to understand how governance trends may have influenced the current political climate. This could highlight trend-based insights into the systematic strengths or weaknesses that shaped the 2023 instability.\
@@ -90,7 +92,7 @@ Taking a quantitative approach, this goal employs a regression model to investig
 Image Source:https://www.alamyimages.fr/deux-drapeaux-des-etats-unis-et-du-niger-experience-professionnelle-de-haute-qualite-illustration-tridimensionnelle-image353769580.html
 
 Analysis:\
-Niger's recent political instability holds international implications, notably for U.S. counterterrorism initiatives. As a vital ally hosting U.S. drone bases, American Special Forces, and operations against extremist groups like Boko Haram and ISIS affiliates, Niger's stability is paramount. A retrospective analysis of its political stability, leadership trends, economic health, and foreign aid reliance is essential to grasp the base of the 2023 political shift.
+Niger's recent political instability holds international implications, notably for U.S. counterterrorism initiatives. A retrospective analysis of its political stability, leadership trends, economic health, and foreign aid reliance is essential to grasp the base of the 2023 political shift.
 
 Key Points:
 - “So what?”: Niger's significance to U.S. counterterrorism efforts in Africa lies in its cooperation, hosting U.S. drone bases, American Special Forces, and logistics experts engaged in operations against Boko Haram and ISIS affiliates.
@@ -108,7 +110,7 @@ Content Source: https://www.npr.org/2023/07/27/1190463279/niger-coup-us-countert
 Image Source:https://www.airforcetimes.com/news/your-air-force/2020/04/02/air-force-botched-building-its-new-air-base-in-africa/
 
 Analysis:\
-The dataset was curated to capture a 25/26 year snapshot, consisting of 1478 rows and 30 distinct columns, offering a comprehensive glimpse into Niger's evolving political and economic scenario. The most notable features encompass World Governance Indicators like Political Stability, Control of Corruption, Government Effectiveness, and crucial Economic Indicators such as Inflation, GDP, Unemployment, and Gross Capital Formation. Additionally, insights into Foreign Aid are represented through DAC Flows & Net ODA. Regarding data categorization, features are classified as either strings or objects, like the 'Indicator/Code,' or as floating numbers representing monetary values in USD, percentages, or aggregate indicators. Despite the expansive time frame, most data trimming significantly reduced data gaps, ensuring an almost seamless exploration of leadership periods. Nevertheless, any persisting missing data was prudently addressed, tailoring solutions to each analytical goal.
+The dataset was curated from the World Bank to capture a 25/26 year snapshot, consisting of 1478 rows and 30 distinct columns, offering a comprehensive glimpse into Niger's evolving political and economic scenario. The most notable features encompass World Governance Indicators like Political Stability, Control of Corruption, Government Effectiveness, and crucial Economic Indicators such as Inflation, GDP, Unemployment, and Gross Capital Formation. Additionally, insights into Foreign Aid are represented through DAC Flows & Net ODA. Regarding data categorization, features are classified as either strings or objects, like the 'Indicator/Code,' or as floating numbers representing monetary values in USD, percentages, or aggregate indicators. Despite the expansive time frame, most data trimming significantly reduced data gaps, ensuring an almost seamless exploration of leadership periods. Nevertheless, any persisting missing data was prudently addressed, tailoring solutions to each analytical goal.
 
 Dataset: 
 - Trimmed down for 25/26 year time frame (1478 Rows, 30 Columns).
@@ -162,7 +164,7 @@ Content Source: https://info.worldbank.org/governance/wgi/
 <img src="./img/PG2.png">
 
 Analysis:\
-(Making Sense of the Negative GDP and Negative Inflation): Negative GDP growth and deflation in an economy like Niger's can result from external and internal factors. External shocks, such as a drop in crucial export prices and domestic challenges like political instability or droughts, can hinder economic growth. Concurrently, deflation can arise from reduced consumer demand, excess production capacity, or import deflation from trading partners. The combined occurrence of negative GDP growth and deflation can create a self-reinforcing cycle where reduced spending from deflation further depresses economic activity. In Niger, vulnerabilities produced by regional instability can significantly influence these economic indicators.
+Negative GDP growth and deflation in an economy like Niger's can result from external and internal factors. External shocks, such as a drop in crucial export prices and domestic challenges like political instability or droughts, can hinder economic growth. Concurrently, deflation can arise from reduced consumer demand, excess production capacity, or import deflation from trading partners. The combined occurrence of negative GDP growth and deflation can create a self-reinforcing cycle where reduced spending from deflation further depresses economic activity. In Niger, vulnerabilities produced by regional instability can significantly influence these economic indicators.
 
 Other Context:\
 GDP Growth (annual %):\
@@ -248,8 +250,8 @@ Content Source: https://www.investopedia.com/terms/c/capital-formation.asp
 <img src="./img/PG6.png">
 
 Overall:\
-Simple Linear Regression Model: Predicts Niger's Gross Capital Formation (USD) using Net Bilateral Aid Flows (USD) from DAC donors.\ 
-This model aims to predict Niger's Gross Capital Formation (a critical economic indicator reflecting the country's investment health) using Net Bilateral Aid Flows from DAC donors, a measure of international financial support. The relationship between these two variables could provide insights into how foreign aid impacts Niger's economic health and, subsequently, its political stability. A strong correlation might suggest that changes in foreign aid influence Niger's economic and, potentially, political landscape.
+Simple Linear Regression Model:\
+This model aims to predict Niger's Gross Capital Formation (a critical economic indicator reflecting the country's investment health - USD) using Net Bilateral Aid Flows from DAC donors (USD), a measure of international financial support. The relationship between these two variables could provide insights into how foreign aid impacts Niger's economic health and, subsequently, its political stability. A strong correlation might suggest that changes in foreign aid influence Niger's economic and, potentially, political landscape.
 
 Analysis:\
 The model results reveal a strong relationship between Net Bilateral Aid Flows from DAC donors and Gross Capital Formation, as indicated by the high R-squared value of 0.861. This value signifies that approximately 86.1% of the variation in Gross Capital Formation can be attributed to changes in Net Bilateral Aid Flows, showcasing a good fit of the model to the data. Furthermore, the small p-value (9.19e-12) for the F-statistic confirms the model's overall significance, suggesting that the independent variable, Net Bilateral Aid Flows, significantly impacts the dependent variable, Gross Capital Formation. The regression coefficients, with a negative Y-intercept of -4.749e+08 and a slope of 5.3360, imply that Gross Capital Formation decreases when Net Bilateral Aid Flows are zero. On average, it increases by 5.3360 units, with each unit rising in Net Bilateral Aid Flows, which are statistically significant based on their p-values and 95% confidence intervals.
