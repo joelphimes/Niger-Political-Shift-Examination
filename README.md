@@ -167,13 +167,13 @@ Analysis:\
 Negative GDP growth and deflation in an economy like Niger's can result from external and internal factors. External shocks, such as a drop in crucial export prices and domestic challenges like political instability or droughts, can hinder economic growth. Concurrently, deflation can arise from reduced consumer demand, excess production capacity, or import deflation from trading partners. The combined occurrence of negative GDP growth and deflation can create a self-reinforcing cycle where reduced spending from deflation further depresses economic activity. In Niger, vulnerabilities produced by regional instability can significantly influence these economic indicators.
 
 Other Context:\
-GDP Growth (annual %):\
+GDP Growth (annual %):
 - A positive GDP growth rate suggests economic expansion, marked by increased production, job creation, and higher incomes. In contrast, a negative rate signifies economic contraction, with potential job losses and decreased spending. Sharp dips in GDP growth can hint at economic recessions influenced by global downturns or reduced domestic spending. At the same time, significant rises indicate economic booms driven by factors like increased investments or beneficial global economic shifts.
 
-Inflation, Consumer Prices (annual %):\
+Inflation, Consumer Prices (annual %):
 - A positive inflation rate indicates rising prices for goods and services, with moderate inflation beneficial as it promotes spending and investment. On the other hand, negative inflation, or deflation, signifies falling prices, potentially causing reduced spending and investment due to anticipated further declines. Substantial dips in inflation can signal economic stagnation, while significant rises, especially into hyperinflation, can erode purchasing power, escalating living costs, and devalue savings and investments.
 
-Unemployment, Total (% of the total labor force):\
+Unemployment, Total (% of the total labor force):
 - A positive unemployment rate shows that individuals are looking for jobs unsuccessfully, with higher rates potentially signaling an economic slowdown or recession. Conversely, a negative unemployment rate is implausible, as it would mean more people are employed than available in the labor force. Notably, a marked decrease in unemployment suggests a robust labor market and economic growth. At the same time, a significant increase can indicate economic distress, potentially leading to decreased spending, lower tax incomes, and societal issues.
 
 Content Source: https://www.investopedia.com/articles/06/gdpinflation.asp
@@ -233,8 +233,8 @@ Significant differences were found between "Ibrahim Bare Mainassara Regime" and 
 
 <img src="./img/PG4.png">
 
-Analysis:
-- Regarding Niger, net official development assistance of 44 percent (in 2021) as a percentage of gross capital formation could be considered relatively high. This number indicates a significant reliance on foreign aid to finance a substantial portion of the country's physical and human capital investments. Niger heavily depends on external funding to support its development projects and faces challenges in generating sufficient domestic resources for its development needs. The high aid dependency may make the country vulnerable to fluctuations in aid inflows, impacting long-term planning and sustainability.
+Analysis:\
+Regarding Niger, net official development assistance of 44 percent (in 2021) as a percentage of gross capital formation could be considered relatively high. This number indicates a significant reliance on foreign aid to finance a substantial portion of the country's physical and human capital investments. Niger heavily depends on external funding to support its development projects and faces challenges in generating sufficient domestic resources for its development needs. The high aid dependency may make the country vulnerable to fluctuations in aid inflows, impacting long-term planning and sustainability.
 
 Measured Data Points:
 - Net bilateral aid flows from the Development Assistance Committee (DAC) members are the disbursements of official development assistance (ODA) or official aid to countries and territories listed as ODA recipients. ODA comprises loans with concessional terms and grants to promote economic development and welfare. Official assistance is provided to more advanced countries and territories and is subject to similar terms and conditions as ODA. Part II of the DAC List, which included specific countries, was abolished in 2005, and data collection on official aid to these countries ended in 2004. DAC members, including various countries and the European Union Institutions, provide this aid, and the data is reported in current U.S. dollars, with regional aggregates and income group totals also included.
