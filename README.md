@@ -68,7 +68,7 @@ Analysis:\
 As mentioned above, in 2023, Niger underwent a significant political shift that led to noticeable instability. Unraveling the factors driving this turbulence is vital for understanding Niger's trajectory and shaping policies that could foster stability in the region. This analysis revolves around six analytical goals:
 
 (1) Niger Governance: Examine Three World Governance Indicators from 1996 to 2022  (26 years).\
-By examining the World Governance Indicators for 26 years (1996-2022), This analysis seeks to understand how governance trends may have influenced the current political climate. This could highlight trend-based insights into the systematic strengths or weaknesses that shaped the 2023 instability.\
+By examining the World Governance Indicators for 26 years (1996-2022), This analysis seeks to understand how governance trends may have influenced the current political climate. This could highlight trend-based insights into the systematic weaknesses that shaped the 2023 instability.\
 \
 (2) Niger Economic Health: Explore Economic Indicators over the specified time frame.\
 Economic indicators over the past decades are a barometer for a nation's prosperity and resilience. An in-depth exploration into these metrics can shed light on whether economic strains contributed to the political unrest.\
@@ -134,28 +134,28 @@ Missing Data:
 <img src="./img/PG1.png">
 
 Analysis:\
-The Worldwide Governance Indicators offer a comprehensive lens into nations' governance quality, spanning six crucial dimensions. For Niger, three stand out: Political Stability (PV.EST), reflecting the nation's vulnerability to unrest and violence, has seen a negative trend, hinting at growing instability. The Control of Corruption (CC.EST), which gauges governmental integrity and mostly lingers in negative territory for Niger, points to sustained challenges in curbing corruption. Lastly, Government Effectiveness (GE.EST), a measure of bureaucratic competence and service delivery, oscillates but frequently remains negative, indicating persistent governmental inefficiencies. These insights, sourced from varied metrics such as public trust and infrastructure quality, illuminate the governance hurdles Niger has to deal with.
+The Worldwide Governance Indicators offer an aggregate/comprehensive lens into nations' governance quality, spanning six crucial dimensions. For Niger, three stand out: Political Stability (PV.EST), reflecting the nation's vulnerability to unrest and violence, has seen a negative trend, hinting at growing instability. The Control of Corruption (CC.EST), which gauges governmental integrity and mostly lingers in negative territory for Niger, points to sustained challenges in curbing corruption. Lastly, Government Effectiveness (GE.EST), a measure of bureaucratic competence and service delivery, oscillates but frequently remains negative, indicating persistent governmental inefficiencies. These insights, sourced from varied metrics such as public trust and infrastructure quality, illuminate the governance hurdles Niger has to deal with.
 
 - Political Stability (Indicator Code: PV.EST):
     * Overall:  This indicator evaluates the likelihood of political instability, social unrest, and violence within a country. It reflects political stability and the absence of armed conflict or terrorism. A higher score implies a more secure and stable political environment, which is crucial for sustainable economic development and social progress.
     * The values for Political Stability range from positive 2.5 to negative 2.5.
     * Positive values (greater than 0) indicate better political stability, while negative values indicate a decline or deterioration in political stability.
     * For Niger, as the year progress, the values become increasingly negative, indicating a decline in political stability over time.
-    * Sources (6 reps): Orderly transfers, Armed conflict, Violent demonstrations, Social unrest, International tensions / terrorist threat HUM Political terror scale, IJT Security risk rating, IPD Intensity of internal conflicts: ethnic, religious or regional, Intensity of violent activities…of underground political organizations, Intensity of social conflicts (excluding conflicts relating to land), PRS Government stability, Internal conflict, External conflict, Ethnic tensions, WMO Protests and riots. 
+    * Sources (6 reps - Comprised of the following categories): Orderly transfers, Armed conflict, Violent demonstrations, Social unrest, International tensions / terrorist threat HUM Political terror scale, IJT Security risk rating, IPD Intensity of internal conflicts: ethnic, religious or regional, Intensity of violent activities…of underground political organizations, Intensity of social conflicts (excluding conflicts relating to land), PRS Government stability, Internal conflict, External conflict, Ethnic tensions, WMO Protests and riots. 
 
 - Control of Corruption (Indicator Code: CC.EST):
     * Overall: This indicator assesses the prevalence of corruption in public institutions and society. It reflects the level of integrity within the government and the effectiveness of anti-corruption efforts. Higher scores on this indicator indicate lower levels of corruption, which fosters trust in public institutions, encourages foreign investments and enhances overall governance and development.
     * The values for Control of Corruption also range from positive 2.5 to negative 2.5.
     * Positive values (greater than 0) indicate better control of corruption, while negative values indicate a deterioration in controlling corruption.
     * For Niger, The values fluctuate over the years but tend to remain negative, indicating persistent challenges in controlling corruption.
-    * Sources (7 reps): Corruption among public officials, Public trust of politicians, Diversion of public funds, Irregular payments in exports and imports, Irregular payments in public utilities, Irregular payments in tax collection, Irregular payments in public contracts, Irregular payments in judicial decisions, Is corruption in government widespread? Level of "petty" corruption between administration and citizens, Level of corruption between administrations and local businesses, Level of corruption between administrations and foreign companies, Corruption, Corruption index, Corruption
+    * Sources (7 reps - Comprised of the following categories): Corruption among public officials, Public trust of politicians, Diversion of public funds, Irregular payments in exports and imports, Irregular payments in public utilities, Irregular payments in tax collection, Irregular payments in public contracts, Irregular payments in judicial decisions, Is corruption in government widespread? Level of "petty" corruption between administration and citizens, Level of corruption between administrations and local businesses, Level of corruption between administrations and foreign companies, Corruption, Corruption index, Corruption
 
 - Government Effectiveness (Indicator Code: GE.EST):
     * Overall: This indicator gauges the quality of public services, the efficiency of government operations, and the capability of the bureaucracy to implement policies and programs. It examines how well the government can provide essential services, enforce laws, and deliver public goods. Higher scores on this indicator indicate a more effective and competent government that can efficiently address societal challenges and meet the needs of its citizens.
     * The values for Government Effectiveness also range from positive 2.5 to negative 2.5.
     * Positive values (greater than 0) indicate better government effectiveness, while negative values indicate a decline in government effectiveness.
     * For Niger, as the year progresses, the values fluctuate but tend to remain negative, suggesting ongoing challenges in improving government effectiveness.
-    * Sources(6 reps): Quality of bureaucracy / institutional effectiveness, Excessive bureacucracy / red tape, Quality of road infrastructure, Quality of primary education, Satisfaction with the public transportation system, Satisfaction with roads and highways, Satisfaction with the education system, Coverage area: public school, Coverage area: basic health services, Coverage area: drinking water and sanitation, Coverage area: electricity grid, Coverage area: transport infrastructure, Coverage area: maintenance and waste disposal, Bureaucratic quality, WMO Infrastructure disruption.
+    * Sources(6 reps - Comprised of the following categories): Quality of bureaucracy / institutional effectiveness, Excessive bureacucracy / red tape, Quality of road infrastructure, Quality of primary education, Satisfaction with the public transportation system, Satisfaction with roads and highways, Satisfaction with the education system, Coverage area: public school, Coverage area: basic health services, Coverage area: drinking water and sanitation, Coverage area: electricity grid, Coverage area: transport infrastructure, Coverage area: maintenance and waste disposal, Bureaucratic quality, WMO Infrastructure disruption.
  
 Content Source: https://info.worldbank.org/governance/wgi/
 
@@ -307,6 +307,9 @@ Coss-Validation Analysis:
 - If the typical 'Amount_GCF' values are in the millions, the model will likely not fit the data well.
 
 Content Source: https://www.statisticshowto.com/cross-validation-statistics/
+
+# Summary
+This presentation explores historical events and indicators contributing to Niger's political instability, including weak governance, corruption, economic troubles, factionalism, and extreme poverty. It delves into nearly three decades of Niger's tumultuous journey, analyzing the impact of government, economic health, leadership regimes, and foreign aid. The findings highlight challenges and statistical significance in some categories, including political stability, financial vulnerabilities, and heavy reliance on foreign aid, providing possible insights as to why these shifts continue to happen in Niger every decade or so.
 
 # Contact Information
 Thank you for your attention & time during the presentation.\
