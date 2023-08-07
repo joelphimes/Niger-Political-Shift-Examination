@@ -309,7 +309,7 @@ Coss-Validation Analysis:
 Content Source: https://www.statisticshowto.com/cross-validation-statistics/
 
 # Summary
-This presentation explores historical events and indicators contributing to Niger's political instability, including weak governance, corruption, economic troubles, factionalism, and extreme poverty. It delves into nearly three decades of Niger's tumultuous journey, analyzing the impact of government, economic health, leadership regimes, and foreign aid. The findings highlight challenges and statistical significance in some categories, including political stability, financial vulnerabilities, and heavy reliance on foreign aid, providing possible insights as to why these shifts continue to happen in Niger every decade or so.
+This presentation explores historical events and indicators contributing to Niger's political instability, including weak governance and economic challenges. It delves into nearly three decades of Niger's tumultuous journey, analyzing the impact of government, economic health, leadership regimes, and foreign aid. The findings highlight challenges and statistical significance in some categories, including political stability, financial vulnerabilities, and heavy reliance on foreign aid, providing possible insights as to why these shifts continue to happen in Niger every decade or so.
 
 # Contact Information
 Thank you for your attention & time during the presentation.\
