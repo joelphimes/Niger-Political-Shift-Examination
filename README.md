@@ -172,8 +172,6 @@ Content Source: https://www.investopedia.com/articles/markets/081515/how-inflati
 
 Analysis:
 \
-\
-Overall:\
 During Ibrahim Bare Mainassara's rule from 1996 to 1999, characterized by conservative Islamist laws, the Government Effectiveness Mean was -1.14. His tenure witnessed periods of instability, including coups, ultimately leading to his assassination in 1999. 
 
 Mamadou Tandja, who governed from 1999 to 2010 with a conservative center-right approach, had a Government Effectiveness Mean of -0.80. Despite facing challenges in office, he was overthrown in a coup, which marked the end of his presidency.
@@ -181,24 +179,6 @@ Mamadou Tandja, who governed from 1999 to 2010 with a conservative center-right 
 From 2011 to 2021, Mahamadou Issoufou followed a social democratic, center-left ideology, with a Government Effectiveness Mean of -0.71. Notably, he maintained a positive alliance with the West and respected the limits of his power, voluntarily leaving office without attempting to extend his rule. 
 
 The leadership of these three presidents in Niger saw varying levels of government effectiveness, with each leader representing different ideologies and facing unique challenges during their respective tenures. Ibrahim Bare Mainassara's governance was marked by lower effectiveness, while Mamadou Tandja and Mahamadou Issoufou's leadership achieved comparatively better government effectiveness despite facing political turmoil.
-\
-\
-Leadership:
-\
-1996 - 1999: Ibrahim Bare Mainassara: 
-- Conservative Islamist laws.
-- Assassinated in 1999.
-- Seized and lost power in coups.
-
-1999 - 2010: Mamadou Tandja:
-- Conservative Center-Right.
-- Lost power in a coup.
-- Died of illness in 2020.
-
-2011- 2021:  Mahamadou Issoufou:
-- Social Democracy, Center Left.
-- Ally of the West.
-- Left power by respecting limits.
 
 Content Source: https://www.britannica.com/biography/Ibrahim-Bare-Mainassara 
 \
@@ -208,23 +188,100 @@ Content Source: https://www.britannica.com/biography/Mahamadou-Issoufou
 
 # Niger Leadership: ANOVA on Government Effectiveness.
 
-<img src="./img/PG3.png">
+Analysis:
+\
+In the previous analysis of leadership, Ibrahim Bare Mainassara's governance displayed lower effectiveness compared to Mamadou Tandja and Mahamadou Issoufou, who exhibited relatively better government effectiveness despite facing political challenges. To ascertain the statistical significance of these government effectiveness averages, an ANOVA (Analysis of Variance) can be conducted. ANOVA is a statistical method used to compare means of three or more groups, determining if significant differences exist among them by assessing the variation between group means relative to the variation within the groups. 
 
-Findings:\
+Additionally, the post hoc test TUKEY HSD (Honestly Significant Difference) can be employed after ANOVA to identify specific group means that differ significantly. By utilizing ANOVA and TUKEY HSD, researchers aimed to draw meaningful conclusions regarding the substantial variations in government effectiveness among these leaders and the impact of their governance styles despite challenging circumstances.
+
+<img src="./img/ANOVA_1.png">
+
+Findings:
+
+Null Hypothesis (H0): The means of the different groups are equal. In other words, there is no effect of the factor on the dependent variable.
+
+Alternative Hypothesis (H1): At least one group's mean differs from the others.
+
 ANOVA results suggest that the factor Regime has a statistically significant effect on the outcome variable (GE). The means of at least two of the Regime levels are significantly different from each other. (But which two levels?)
 
-<img src="./img/PG3.png">
+<img src="./img/ANOVA_2.png">
 
-Findings:\
+Findings:
+
+Null Hypothesis (H0): The means of the three groups being compared are equal.
+
+Alternative Hypothesis (H1): The means of the three groups being compared are unequal.
+When we reject the null hypothesis in the ANOVA, it does not tell us which groups are different. The Tukey HSD test helps us identify which specific group means are different from each other.
+
 Significant differences were found between "Ibrahim Bare Mainassara Regime" and both "Mahamadou Issoufou Regime" and "Mamadou Tandja Regime", while "Mahamadou Issoufou Regime" and "Mamadou Tandja Regime" did not significantly differ in their means.
 
 # Niger Foreign Aid: Uncover data points related to foreign assistance from the US. 
 
 <img src="./img/PG4.png">
 
+Analysis:
+- In the context of Niger, net official development assistance of 44 percent (in 2021) as a percentage of gross capital formation could be considered relatively high. This number indicates a significant reliance on foreign aid to finance a substantial portion of the country's physical and human capital investments. Niger heavily depends on external funding to support its development projects and faces challenges in generating sufficient domestic resources for its development needs. The high aid dependency may make the country vulnerable to fluctuations in aid inflows, impacting long-term planning and sustainability.
+
+Measured Data Points:
+- Net bilateral aid flows from the Development Assistance Committee (DAC) members are the disbursements of official development assistance (ODA) or official aid to countries and territories listed as ODA recipients. ODA comprises loans with concessional terms and grants to promote economic development and welfare. Official assistance is provided to more advanced countries and territories and is subject to similar terms and conditions as ODA. Part II of the DAC List, which included specific countries, was abolished in 2005, and data collection on official aid to these countries ended in 2004. DAC members, including various countries and the European Union Institutions, provide this aid, and the data is reported in current U.S. dollars, with regional aggregates and income group totals also included.
+
+- Gross capital formation, also known as gross fixed capital formation, is an economic indicator that measures the total value of investments made in a country during a specific period. It includes investments in physical assets like machinery, equipment, buildings, and infrastructure, as well as education and training, contributing to the country's productive capacity and long-term economic growth. The components of gross capital formation consist of fixed capital formation, which covers investments in tangible assets used repeatedly in production processes, changes in inventories representing the value of stock changes held by businesses, and human capital formation, which encompasses investments in education and training to enhance the knowledge and skills of the labor force, ultimately leading to increased productivity and economic development.
+
+Content Source: https://data.oecd.org/
+\
+Content Source: https://www.investopedia.com/terms/c/capital-formation.asp
+
 # Niger Foreign Aid: Regression Model - DAC Flows & Niger GCF.
 
 <img src="./img/PG6.png">
+
+Overall:\
+Simple Linear Regression Model: Predicts Niger's Gross Capital Formation (USD) using Net Bilateral Aid Flows (USD) from DAC donors.
+
+Analysis:\
+The model results reveal a strong relationship between Net Bilateral Aid Flows from DAC donors and Gross Capital Formation, as indicated by the high R-squared value of 0.861. This value signifies that approximately 86.1% of the variation in Gross Capital Formation can be attributed to changes in Net Bilateral Aid Flows, showcasing a good fit of the model to the data. Furthermore, the small p-value (9.19e-12) for the F-statistic confirms the model's overall significance, suggesting that the independent variable, Net Bilateral Aid Flows, significantly impacts the dependent variable, Gross Capital Formation. The regression coefficients, with a negative Y-intercept of -4.749e+08 and a slope of 5.3360, imply that Gross Capital Formation decreases when Net Bilateral Aid Flows are zero. On average, it increases by 5.3360 units, with each unit rising in Net Bilateral Aid Flows, which are statistically significant based on their p-values and 95% confidence intervals.
+
+The residual analysis indicates that the model appears satisfactory, showing no significant non-linearity or heteroscedasticity concerns, while the presence of some outliers does not significantly affect the overall model performance. Multicollinearity is not an issue as the Variance Inflation Factor (VIF) for the predictor variable (Amount_DAC) is 1, signifying no correlation with other predictors. In cross-validation, the model's predictions exhibit a mean squared error (MSE) of 5.2248430324784666e+17 units squared and a root mean squared error (RMSE) of approximately 722,830,756.99 units. The interpretation of RMSE's adequacy should consider the scale of Gross Capital Formation (Amount_GCF). If typical values lie in the billions, the RMSE indicates a satisfactory model fit. Still, if they fall within the millions, the model may require improvement to align with the data better. Overall, these model insights provide valuable information for understanding the relationship between Net Bilateral Aid Flows and Gross Capital Formation in the context of the data analysis.
+
+Model Results:\
+- R-squared: This value ranges from 0 to 1 and represents the proportion of the variance for the dependent variable (Gross Capital Formation) that's explained by the independent variable (Net Bilateral Aid Flows from DAC donors). Your R-squared is 0.861, which means that 86.1% of the variability in Gross Capital Formation can be explained by Net Bilateral Aid Flows. This is a high R-squared, indicating a good fit of the model to your data.
+
+- Adj. R-squared: This is the R-squared value adjusted based on the number of predictors in the model. In this case, it is 0.855. It is a more accurate measure of the goodness-of-fit, especially when comparing models with different numbers of predictors.
+
+- F-statistic and Prob (F-statistic): The F-statistic is used to test the overall significance of the model. The null hypothesis would be that all of the regression coefficients are equal to zero. The Prob (F-statistic) is the probability that you would get the computed value of F if the null hypothesis were true. In this case, the p-value is extremely small (9.19e-12), suggesting that at least some of the regression coefficients are not zero, i.e., the independent variable does have an effect on the dependent variable.
+
+- coef (const and Amount_DAC): The const coefficient is your Y-intercept. It means that when Net Bilateral Aid Flows are zero, the Gross Capital Formation is -4.749e+08. The Amount_DAC coefficient is the slope of your regression line. It means that for each unit increase in Net Bilateral Aid Flows, the Gross Capital Formation increases by 5.3360 units, on average.
+
+- P>|t| (const and Amount_DAC): These are the p-values associated with the null hypothesis that the respective coefficient is equal to zero (i.e., the variable has no effect). In both cases, the p-values are less than 0.05, suggesting that the intercept and slope are significantly different from zero.
+
+- [0.025 0.975]: These are the 95% confidence intervals for the coefficients. If the interval does not include zero, it suggests the coefficient is statistically significant at the 5% level. Both intervals for const and Amount_DAC do not include zero, so they are statistically significant.
+
+Residual Analysis:
+- Things appear to be in order. Nothing outstandingly nonlinear, Unequal Error (Heteroscedasticity).
+
+- If the residuals are randomly scattered around zero, it suggests a good fit for the model.
+
+<img src="./img/PG6.png"> 
+
+Multicollinearity Check:
+- VIF for Amount_DAC is 1, which is the minimum possible value for VIF, indicating that there is no multicollinearity.
+
+- Amount_DAC is not correlated with any other predictor variables in the model.
+
+<img src="./img/PG6.png">  
+
+Coss-Validation Analysis:
+- MSE: On average, your model's predictions are 5.2248430324784666e+17 units squared away from the actual value.
+
+- RMSE: By taking the square root of the MSE, we get an error term that is in the same units as your original data.
+
+- In this case, your RMSE is approximately 722,830,756.99. This means that, on average, the model's predictions are about 722.83 million units away from the actual value.
+
+- Particularly, the scale of the 'Amount_GCF' variable is the key here.
+
+- If the typical 'Amount_GCF' values are in the range of billions, an RMSE of 722.83 million may indicate a good model fit.
+
+- If the typical 'Amount_GCF' values are in the millions, the model will likely not fit the data well. 
 
 # Contact Information
 Thank you for your attention & time during the presentation.\
