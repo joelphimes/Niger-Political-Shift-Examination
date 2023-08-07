@@ -1,4 +1,4 @@
-# Niger Political Shift Examination
+# Niger's Political Shift: Examining the Possible Factors Driving the 2023 Instability
 
 <img src="./img/niger_coup.jpg">
 
@@ -62,17 +62,26 @@ Content Source: https://www.aljazeera.com/news/2023/7/27/timeline-a-history-of-c
 
 Image Source:https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger
 
+Analysis:\
+In 2023, Niger underwent a significant political shift that led to noticeable instability. Unraveling the factors driving this turbulence is vital for understanding Niger's trajectory and shaping policies that could foster stability in the region. This analysis revolves around six critical analytical goals:
+
 (1) Niger Governance: Examine Three World Governance Indicators from 1996 to 2022  (26 years).\
+By examining the World Governance Indicators for 26 years (1996-2022), This analysis seeks to understand how governance trends may have influenced the current political climate. This could highlight trend-based insights into the systematic strengths or weaknesses that shaped the 2023 instability.\
 \
 (2) Niger Economic Health: Explore Economic Indicators over the specified time frame.\
+Economic indicators over the past decades are a barometer for a nation's prosperity and resilience. An in-depth exploration into these metrics can shed light on whether economic strains contributed to the political unrest.\
 \
 (3) Niger Leadership: Highlight Leadership Regime Effectiveness.\
+Leadership plays a pivotal role in steering the direction of a nation. By highlighting the effectiveness of various regimes, this analysis aims to discern if leadership dynamics played a significant part in the recent disruptions.\
 \
 (4) Niger Leadership: ANOVA on Government Effectiveness.\
+Utilizing an Analysis of Variance (ANOVA) on government effectiveness, this goal aims to statistically determine if there were statistically significant variations in governance effectiveness over different leadership periods.\
 \
-(5) Niger Foreign Aid: Uncover data points related to foreign assistance from the US.\
+(5) Niger Foreign Aid: Uncover Data Points related to Foreign Assistance.\
+Foreign assistance can influence a country's politics as a stabilizing force or a potential source of conflict. By focusing on aid from some of the top countries, This endeavor can uncover if external monetary flows are a dependent part of stabilizing the Niger economy.\
 \
-(6) Niger Foreign Aid: Regression Model - DAC Flows & Niger GCF.
+(6) Niger Foreign Aid: Regression Model - DAC Flows & Niger GCF.\
+Taking a quantitative approach, this goal employs a regression model to investigate the relationship between Development Assistance Committee (DAC) flows and Niger's Gross Capital Formation (GCF). Understanding this relationship can elucidate how foreign aid impacts Niger's economic structure and, consequently, its stability.
 
 # Stakeholder Value
 
@@ -80,6 +89,10 @@ Image Source:https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger
 
 Image Source:https://www.alamyimages.fr/deux-drapeaux-des-etats-unis-et-du-niger-experience-professionnelle-de-haute-qualite-illustration-tridimensionnelle-image353769580.html
 
+Analysis:\
+Niger's recent political instability holds international implications, notably for U.S. counterterrorism initiatives. As a vital ally hosting U.S. drone bases, American Special Forces, and operations against extremist groups like Boko Haram and ISIS affiliates, Niger's stability is paramount. A retrospective analysis of its political stability, leadership trends, economic health, and foreign aid reliance is essential to grasp the base of the 2023 political shift.
+
+Key Points:
 - “So what?”: Niger's significance to U.S. counterterrorism efforts in Africa lies in its cooperation, hosting U.S. drone bases, American Special Forces, and logistics experts engaged in operations against Boko Haram and ISIS affiliates.
 
 - Informed Decision-Making: Analyzing historical data on political stability, leadership, economic health, and reliance on foreign aid. Stakeholders can gain insights into the country's historical political landscape and how it may have contributed to the coup.
@@ -93,6 +106,9 @@ Content Source: https://www.npr.org/2023/07/27/1190463279/niger-coup-us-countert
 <img src="./img/air-force-base-niger-2018.jpg">
 
 Image Source:https://www.airforcetimes.com/news/your-air-force/2020/04/02/air-force-botched-building-its-new-air-base-in-africa/
+
+Analysis:\
+The dataset was curated to capture a 25/26 year snapshot, consisting of 1478 rows and 30 distinct columns, offering a comprehensive glimpse into Niger's evolving political and economic scenario. The most notable features encompass World Governance Indicators like Political Stability, Control of Corruption, Government Effectiveness, and crucial Economic Indicators such as Inflation, GDP, Unemployment, and Gross Capital Formation. Additionally, insights into Foreign Aid are represented through DAC Flows & Net ODA. Regarding data categorization, features are classified as either strings or objects, like the 'Indicator/Code,' or as floating numbers representing monetary values in USD, percentages, or aggregate indicators. Despite the expansive time frame, most data trimming significantly reduced data gaps, ensuring an almost seamless exploration of leadership periods. Nevertheless, any persisting missing data was prudently addressed, tailoring solutions to each analytical goal.
 
 Dataset: 
 - Trimmed down for 25/26 year time frame (1478 Rows, 30 Columns).
@@ -115,9 +131,8 @@ Missing Data:
 
 <img src="./img/PG1.png">
 
-Analysis:
-
-Overall: The Worldwide Governance Indicators measure the quality of governance in countries based on six dimensions: Voice and Accountability, Political Stability and Absence of Violence, Government Effectiveness, Regulatory Quality, Rule of Law, and Control of Corruption. These indicators provide valuable insights into the effectiveness of public institutions, governance structures, and the rule of law within a country, which are critical factors influencing economic and social development. 
+Analysis:\
+The Worldwide Governance Indicators offer a comprehensive lens into nations' governance quality, spanning six crucial dimensions. For Niger, three stand out: Political Stability (PV.EST), reflecting the nation's vulnerability to unrest and violence, has seen a negative trend, hinting at growing instability. The Control of Corruption (CC.EST), which gauges governmental integrity and mostly lingers in negative territory for Niger, points to sustained challenges in curbing corruption. Lastly, Government Effectiveness (GE.EST), a measure of bureaucratic competence and service delivery, oscillates but frequently remains negative, indicating persistent governmental inefficiencies. These insights, sourced from varied metrics such as public trust and infrastructure quality, illuminate the governance hurdles Niger has to deal with.
 
 - Political Stability (Indicator Code: PV.EST):
     * Overall:  This indicator evaluates the likelihood of political instability, social unrest, and violence within a country. It reflects political stability and the absence of armed conflict or terrorism. A higher score implies a more secure and stable political environment, which is crucial for sustainable economic development and social progress.
@@ -142,25 +157,22 @@ Overall: The Worldwide Governance Indicators measure the quality of governance i
  
 Content Source: https://info.worldbank.org/governance/wgi/
 
-# Niger Economic Health: Explore Economic Indicators over the specified time frame.
+# Niger Economic Health: Explore Economic Indicators Over the Specified Time Frame.
 
 <img src="./img/PG2.png">
 
-Analysis:
+Analysis:\
+(Making Sense of the Negative GDP and Negative Inflation): Negative GDP growth and deflation in an economy like Niger's can result from external and internal factors. External shocks, such as a drop in crucial export prices and domestic challenges like political instability or droughts, can hinder economic growth. Concurrently, deflation can arise from reduced consumer demand, excess production capacity, or import deflation from trading partners. The combined occurrence of negative GDP growth and deflation can create a self-reinforcing cycle where reduced spending from deflation further depresses economic activity. In Niger, vulnerabilities produced by regional instability can significantly influence these economic indicators.
 
-Overall:\
-(Making Sense of the Negative GDP and Negative Inflation): Negative GDP growth and deflation in an economy like Niger's can result from external and internal factors. External shocks, such as a drop in crucial export prices and domestic challenges like political instability or droughts, can hinder economic growth. Concurrently, deflation can arise from reduced consumer demand, excess production capacity, or import deflation from trading partners. The combined occurrence of negative GDP growth and deflation can create a self-reinforcing cycle where reduced spending from deflation further depresses economic activity. In Niger, vulnerabilities produced from regional instability can significantly influence these economic indicators.
-
-Other Context:
-
+Other Context:\
 GDP Growth (annual %):\
-A positive GDP growth rate suggests economic expansion, marked by increased production, job creation, and higher incomes. In contrast, a negative rate signifies economic contraction, with potential job losses and decreased spending. Sharp dips in GDP growth can hint at economic recessions influenced by global downturns or reduced domestic spending. At the same time, significant rises indicate economic booms driven by factors like increased investments or beneficial global economic shifts.
+- A positive GDP growth rate suggests economic expansion, marked by increased production, job creation, and higher incomes. In contrast, a negative rate signifies economic contraction, with potential job losses and decreased spending. Sharp dips in GDP growth can hint at economic recessions influenced by global downturns or reduced domestic spending. At the same time, significant rises indicate economic booms driven by factors like increased investments or beneficial global economic shifts.
 
 Inflation, Consumer Prices (annual %):\
-A positive inflation rate indicates rising prices for goods and services, with moderate inflation beneficial as it promotes spending and investment. On the other hand, negative inflation, or deflation, signifies falling prices, potentially causing reduced spending and investment due to anticipated further declines. Substantial dips in inflation can signal economic stagnation, while significant rises, especially into hyperinflation, can erode purchasing power, escalating living costs, and devalue savings and investments.
+- A positive inflation rate indicates rising prices for goods and services, with moderate inflation beneficial as it promotes spending and investment. On the other hand, negative inflation, or deflation, signifies falling prices, potentially causing reduced spending and investment due to anticipated further declines. Substantial dips in inflation can signal economic stagnation, while significant rises, especially into hyperinflation, can erode purchasing power, escalating living costs, and devalue savings and investments.
 
 Unemployment, Total (% of the total labor force):\
-A positive unemployment rate shows that individuals are looking for jobs unsuccessfully, with higher rates potentially signaling an economic slowdown or recession. Conversely, a negative unemployment rate is implausible, as it would mean more people are employed than available in the labor force. Notably, a marked decrease in unemployment suggests a robust labor market and economic growth. At the same time, a significant increase can indicate economic distress, potentially leading to decreased spending, lower tax incomes, and societal issues.
+- A positive unemployment rate shows that individuals are looking for jobs unsuccessfully, with higher rates potentially signaling an economic slowdown or recession. Conversely, a negative unemployment rate is implausible, as it would mean more people are employed than available in the labor force. Notably, a marked decrease in unemployment suggests a robust labor market and economic growth. At the same time, a significant increase can indicate economic distress, potentially leading to decreased spending, lower tax incomes, and societal issues.
 
 Content Source: https://www.investopedia.com/articles/06/gdpinflation.asp
 \
@@ -170,8 +182,9 @@ Content Source: https://www.investopedia.com/articles/markets/081515/how-inflati
 
 <img src="./img/PG3.png">
 
-Analysis:
-\
+Analysis:\
+Niger's leadership landscape from 1996 to 2021 is marked by three distinct presidencies, each carrying a unique ideological stance and governance effectiveness score.
+
 During Ibrahim Bare Mainassara's rule from 1996 to 1999, characterized by conservative Islamist laws, the Government Effectiveness Mean was -1.14. His tenure witnessed periods of instability, including coups, ultimately leading to his assassination in 1999. 
 
 Mamadou Tandja, who governed from 1999 to 2010 with a conservative center-right approach, had a Government Effectiveness Mean of -0.80. Despite facing challenges in office, he was overthrown in a coup, which marked the end of his presidency.
@@ -188,8 +201,7 @@ Content Source: https://www.britannica.com/biography/Mahamadou-Issoufou
 
 # Niger Leadership: ANOVA on Government Effectiveness.
 
-Analysis:
-\
+Analysis:\
 In the previous analysis of leadership, Ibrahim Bare Mainassara's governance displayed lower effectiveness compared to Mamadou Tandja and Mahamadou Issoufou, who exhibited relatively better government effectiveness despite facing political challenges. To ascertain the statistical significance of these government effectiveness averages, an ANOVA (Analysis of Variance) can be conducted. ANOVA is a statistical method used to compare means of three or more groups, determining if significant differences exist among them by assessing the variation between group means relative to the variation within the groups. 
 
 Additionally, the post hoc test TUKEY HSD (Honestly Significant Difference) can be employed after ANOVA to identify specific group means that differ significantly. By utilizing ANOVA and TUKEY HSD, researchers aimed to draw meaningful conclusions regarding the substantial variations in government effectiveness among these leaders and the impact of their governance styles despite challenging circumstances.
@@ -215,12 +227,12 @@ When we reject the null hypothesis in the ANOVA, it does not tell us which group
 
 Significant differences were found between "Ibrahim Bare Mainassara Regime" and both "Mahamadou Issoufou Regime" and "Mamadou Tandja Regime", while "Mahamadou Issoufou Regime" and "Mamadou Tandja Regime" did not significantly differ in their means.
 
-# Niger Foreign Aid: Uncover data points related to foreign assistance from the US. 
+# Niger Foreign Aid: Uncover Data Points Related to Foreign Assistance. 
 
 <img src="./img/PG4.png">
 
 Analysis:
-- In the context of Niger, net official development assistance of 44 percent (in 2021) as a percentage of gross capital formation could be considered relatively high. This number indicates a significant reliance on foreign aid to finance a substantial portion of the country's physical and human capital investments. Niger heavily depends on external funding to support its development projects and faces challenges in generating sufficient domestic resources for its development needs. The high aid dependency may make the country vulnerable to fluctuations in aid inflows, impacting long-term planning and sustainability.
+- Regarding Niger, net official development assistance of 44 percent (in 2021) as a percentage of gross capital formation could be considered relatively high. This number indicates a significant reliance on foreign aid to finance a substantial portion of the country's physical and human capital investments. Niger heavily depends on external funding to support its development projects and faces challenges in generating sufficient domestic resources for its development needs. The high aid dependency may make the country vulnerable to fluctuations in aid inflows, impacting long-term planning and sustainability.
 
 Measured Data Points:
 - Net bilateral aid flows from the Development Assistance Committee (DAC) members are the disbursements of official development assistance (ODA) or official aid to countries and territories listed as ODA recipients. ODA comprises loans with concessional terms and grants to promote economic development and welfare. Official assistance is provided to more advanced countries and territories and is subject to similar terms and conditions as ODA. Part II of the DAC List, which included specific countries, was abolished in 2005, and data collection on official aid to these countries ended in 2004. DAC members, including various countries and the European Union Institutions, provide this aid, and the data is reported in current U.S. dollars, with regional aggregates and income group totals also included.
@@ -236,12 +248,13 @@ Content Source: https://www.investopedia.com/terms/c/capital-formation.asp
 <img src="./img/PG6.png">
 
 Overall:\
-Simple Linear Regression Model: Predicts Niger's Gross Capital Formation (USD) using Net Bilateral Aid Flows (USD) from DAC donors.
+Simple Linear Regression Model: Predicts Niger's Gross Capital Formation (USD) using Net Bilateral Aid Flows (USD) from DAC donors.\ 
+This model aims to predict Niger's Gross Capital Formation (a critical economic indicator reflecting the country's investment health) using Net Bilateral Aid Flows from DAC donors, a measure of international financial support. The relationship between these two variables could provide insights into how foreign aid impacts Niger's economic health and, subsequently, its political stability. A strong correlation might suggest that changes in foreign aid influence Niger's economic and, potentially, political landscape.
 
 Analysis:\
 The model results reveal a strong relationship between Net Bilateral Aid Flows from DAC donors and Gross Capital Formation, as indicated by the high R-squared value of 0.861. This value signifies that approximately 86.1% of the variation in Gross Capital Formation can be attributed to changes in Net Bilateral Aid Flows, showcasing a good fit of the model to the data. Furthermore, the small p-value (9.19e-12) for the F-statistic confirms the model's overall significance, suggesting that the independent variable, Net Bilateral Aid Flows, significantly impacts the dependent variable, Gross Capital Formation. The regression coefficients, with a negative Y-intercept of -4.749e+08 and a slope of 5.3360, imply that Gross Capital Formation decreases when Net Bilateral Aid Flows are zero. On average, it increases by 5.3360 units, with each unit rising in Net Bilateral Aid Flows, which are statistically significant based on their p-values and 95% confidence intervals.
 
-The residual analysis indicates that the model appears satisfactory, showing no significant non-linearity or heteroscedasticity concerns, while the presence of some outliers does not significantly affect the overall model performance. Multicollinearity is not an issue as the Variance Inflation Factor (VIF) for the predictor variable (Amount_DAC) is 1, signifying no correlation with other predictors. In cross-validation, the model's predictions exhibit a mean squared error (MSE) of 5.2248430324784666e+17 units squared and a root mean squared error (RMSE) of approximately 722,830,756.99 units. The interpretation of RMSE's adequacy should consider the scale of Gross Capital Formation (Amount_GCF). If typical values lie in the billions, the RMSE indicates a satisfactory model fit. Still, if they fall within the millions, the model may require improvement to align with the data better. Overall, these model insights provide valuable information for understanding the relationship between Net Bilateral Aid Flows and Gross Capital Formation in the context of the data analysis.
+The residual analysis indicates that the model appears satisfactory, showing no significant non-linearity or heteroscedasticity concerns, while the presence of some outliers does not significantly affect the overall model performance. Multicollinearity is not an issue as the Variance Inflation Factor (VIF) for the predictor variable (Amount_DAC) is 1, signifying no correlation with other predictors. In cross-validation, the model's predictions exhibit a mean squared error (MSE) of 5.2248430324784666e+17 units squared and a root mean squared error (RMSE) of approximately 722,830,756.99 units. The interpretation of RMSE's adequacy should consider the scale of Gross Capital Formation (Amount_GCF). If typical values lie in the billions, the RMSE indicates a satisfactory model fit. Still, if they fall within the millions, the model may require improvement to align with the data better. Overall, these model insights provide solid information for understanding the relationship between Net Bilateral Aid Flows (USD) and Gross Capital Formation (USD) for Niger.
 
 Model Results:
 - R-squared: This value ranges from 0 to 1 and represents the proportion of the variance for the dependent variable (Gross Capital Formation) that's explained by the independent variable (Net Bilateral Aid Flows from DAC donors). Your R-squared is 0.861, which means that 86.1% of the variability in Gross Capital Formation can be explained by Net Bilateral Aid Flows. This is a high R-squared, indicating a good fit of the model to your data.
@@ -252,14 +265,14 @@ Model Results:
 
 - coef (const and Amount_DAC): The const coefficient is your Y-intercept. It means that when Net Bilateral Aid Flows are zero, the Gross Capital Formation is -4.749e+08. The Amount_DAC coefficient is the slope of your regression line. It means that for each unit increase in Net Bilateral Aid Flows, the Gross Capital Formation increases by 5.3360 units, on average.
 
-- P>|t| (const and Amount_DAC): These are the p-values associated with the null hypothesis that the respective coefficient is equal to zero (i.e., the variable has no effect). In both cases, the p-values are less than 0.05, suggesting that the intercept and slope are significantly different from zero.
+- P>|t| (const and Amount_DAC): These are the p-values associated with the null hypothesis that the respective coefficient is equal to zero (the variable has no effect). In both cases, the p-values are less than 0.05, suggesting that the intercept and slope are significantly different from zero.
 
 - [0.025 0.975]: These are the 95% confidence intervals for the coefficients. If the interval does not include zero, it suggests the coefficient is statistically significant at the 5% level. Both intervals for const and Amount_DAC do not include zero, so they are statistically significant.
 
 Residual Analysis:
 - Overview: Residuals are the differences between the observed values and those predicted by a statistical model.
 
-- Things appear to be in order. Nothing outstandingly nonlinear, Unequal Error (Heteroscedasticity).
+- Nothing outstandingly nonlinear, Unequal Error (Heteroscedasticity).
 
 - If the residuals are randomly scattered around zero, it suggests a good fit for the model.
 
@@ -270,7 +283,7 @@ Content Source: https://www.scaler.com/topics/data-science/residual-analysis/
 Multicollinearity Check:
 - Overview: Multicollinearity occurs when two or more independent variables in a regression model are highly correlated. This makes it difficult for the model to isolate the individual effect of each predictor.
 
-- VIF for the Amount_DAC variable is 1, which is the minimum possible value for VIF, indicating that there is no multicollinearity.
+- VIF for the Amount_DAC variable (coefficient) is 1, which is the minimum possible value for VIF, indicating that there is no multicollinearity.
 
 - Amount_DAC is not correlated with any other predictor variables in the model.
 
@@ -279,7 +292,7 @@ Content Source: https://www.analyticsvidhya.com/blog/2020/03/what-is-multicollin
 Coss-Validation Analysis:
 - Overview: Cross-validation is a technique used to assess how a predictive model will generalize to an independent dataset. It involves dividing the dataset into multiple subsets and using these subsets to train and test the model iteratively.
 
-- MSE: On average, your model's predictions are 5.2248430324784666e+17 units squared away from the actual value.
+- MSE: On average, The model's predictions are 5.2248430324784666e+17 units squared away from the actual value.
 
 - RMSE: By taking the square root of the MSE, we get an error term that is in the same units as your original data.
 
