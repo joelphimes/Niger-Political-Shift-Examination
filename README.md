@@ -243,7 +243,7 @@ The model results reveal a strong relationship between Net Bilateral Aid Flows f
 
 The residual analysis indicates that the model appears satisfactory, showing no significant non-linearity or heteroscedasticity concerns, while the presence of some outliers does not significantly affect the overall model performance. Multicollinearity is not an issue as the Variance Inflation Factor (VIF) for the predictor variable (Amount_DAC) is 1, signifying no correlation with other predictors. In cross-validation, the model's predictions exhibit a mean squared error (MSE) of 5.2248430324784666e+17 units squared and a root mean squared error (RMSE) of approximately 722,830,756.99 units. The interpretation of RMSE's adequacy should consider the scale of Gross Capital Formation (Amount_GCF). If typical values lie in the billions, the RMSE indicates a satisfactory model fit. Still, if they fall within the millions, the model may require improvement to align with the data better. Overall, these model insights provide valuable information for understanding the relationship between Net Bilateral Aid Flows and Gross Capital Formation in the context of the data analysis.
 
-Model Results:\
+Model Results:
 - R-squared: This value ranges from 0 to 1 and represents the proportion of the variance for the dependent variable (Gross Capital Formation) that's explained by the independent variable (Net Bilateral Aid Flows from DAC donors). Your R-squared is 0.861, which means that 86.1% of the variability in Gross Capital Formation can be explained by Net Bilateral Aid Flows. This is a high R-squared, indicating a good fit of the model to your data.
 
 - Adj. R-squared: This is the R-squared value adjusted based on the number of predictors in the model. In this case, it is 0.855. It is a more accurate measure of the goodness-of-fit, especially when comparing models with different numbers of predictors.
@@ -257,20 +257,28 @@ Model Results:\
 - [0.025 0.975]: These are the 95% confidence intervals for the coefficients. If the interval does not include zero, it suggests the coefficient is statistically significant at the 5% level. Both intervals for const and Amount_DAC do not include zero, so they are statistically significant.
 
 Residual Analysis:
+- Overview: Residuals are the differences between the observed values and those predicted by a statistical model.
+
 - Things appear to be in order. Nothing outstandingly nonlinear, Unequal Error (Heteroscedasticity).
 
 - If the residuals are randomly scattered around zero, it suggests a good fit for the model.
 
-<img src="./img/PG6.png"> 
+<img src="./img/residual.png"> 
+
+Content Source: https://www.scaler.com/topics/data-science/residual-analysis/
 
 Multicollinearity Check:
-- VIF for Amount_DAC is 1, which is the minimum possible value for VIF, indicating that there is no multicollinearity.
+- Overview: Multicollinearity occurs when two or more independent variables in a regression model are highly correlated. This makes it difficult for the model to isolate the individual effect of each predictor.
+
+- VIF for the Amount_DAC variable is 1, which is the minimum possible value for VIF, indicating that there is no multicollinearity.
 
 - Amount_DAC is not correlated with any other predictor variables in the model.
 
-<img src="./img/PG6.png">  
+Content Source: https://www.analyticsvidhya.com/blog/2020/03/what-is-multicollinearity/
 
 Coss-Validation Analysis:
+- Overview: Cross-validation is a technique used to assess how a predictive model will generalize to an independent dataset. It involves dividing the dataset into multiple subsets and using these subsets to train and test the model iteratively.
+
 - MSE: On average, your model's predictions are 5.2248430324784666e+17 units squared away from the actual value.
 
 - RMSE: By taking the square root of the MSE, we get an error term that is in the same units as your original data.
@@ -281,7 +289,9 @@ Coss-Validation Analysis:
 
 - If the typical 'Amount_GCF' values are in the range of billions, an RMSE of 722.83 million may indicate a good model fit.
 
-- If the typical 'Amount_GCF' values are in the millions, the model will likely not fit the data well. 
+- If the typical 'Amount_GCF' values are in the millions, the model will likely not fit the data well.
+
+Content Source: https://www.statisticshowto.com/cross-validation-statistics/
 
 # Contact Information
 Thank you for your attention & time during the presentation.\
