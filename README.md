@@ -208,18 +208,22 @@ In the previous analysis of leadership, Ibrahim Bare Mainassara's governance dis
 
 Additionally, the post hoc test TUKEY HSD (Honestly Significant Difference) can be employed after ANOVA to identify specific group means that differ significantly. By utilizing ANOVA and TUKEY HSD, researchers aimed to draw meaningful conclusions regarding the substantial variations in government effectiveness among these leaders and the impact of their governance styles despite challenging circumstances.
 
+# ANOVA Testing
+
 <img src="./img/ANOVA_1.png">
 
-ANOVA Testing:\
 Null Hypothesis (H0): The means of the different groups are equal. In other words, there is no effect of the factor on the dependent variable.
 
 Alternative Hypothesis (H1): At least one group's mean differs from the others.
 
 ANOVA results suggest that the factor Regime has a statistically significant effect on the outcome variable (GE). The means of at least two of the Regime levels are significantly different from each other. (But which two levels?)
 
+Content Source: https://towardsdatascience.com/anova-test-with-python-cfbf4013328b
+
+# Tukey HSD Testing
+
 <img src="./img/ANOVA_2.png">
 
-Tukey HSD Testing:\
 Null Hypothesis (H0): The means of the three groups being compared are equal.
 
 Alternative Hypothesis (H1): The means of the three groups being compared are unequal.
@@ -272,7 +276,7 @@ Model Results:
 
 Content Source: https://www.geeksforgeeks.org/interpreting-the-results-of-linear-regression-using-ols-summary/
 
-Residual Analysis:
+# Residual Analysis
 - Overview: Residuals are the differences between the observed values and those predicted by a statistical model.
 
 - Nothing outstandingly nonlinear, Unequal Error (Heteroscedasticity).
@@ -283,7 +287,7 @@ Residual Analysis:
 
 Content Source: https://www.scaler.com/topics/data-science/residual-analysis/
 
-Multicollinearity Check:
+# Multicollinearity Check
 - Overview: Multicollinearity occurs when two or more independent variables in a regression model are highly correlated. This makes it difficult for the model to isolate the individual effect of each predictor.
 
 - VIF for the Amount_DAC variable (coefficient) is 1, which is the minimum possible value for VIF, indicating that there is no multicollinearity.
@@ -292,7 +296,7 @@ Multicollinearity Check:
 
 Content Source: https://www.analyticsvidhya.com/blog/2020/03/what-is-multicollinearity/
 
-Cross-Validation Analysis:
+# Cross-Validation Analysis
 - Overview: Cross-validation is a technique used to assess how a predictive model will generalize to an independent dataset. It involves dividing the dataset into multiple subsets and using these subsets to train and test the model iteratively.
 
 - MSE: On average, The model's predictions are 5.2248430324784666e+17 units squared away from the actual value.
