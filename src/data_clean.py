@@ -91,7 +91,7 @@ class Clean:
         df_without_missing = df.dropna()
         return df_without_missing
     
-    def print_formatted_pvalues(results):
+    def formatted_pvalues(self, results):
         """
         Prints the formatted p-values from the regression results.
     

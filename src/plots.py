@@ -3,6 +3,7 @@ import statsmodels.api as sm
 import matplotlib.pyplot as plt
 from matplotlib import style
 import matplotlib.ticker as mticker
+from matplotlib.ticker import FuncFormatter
 
 # Plot class for line, bar, heatmap, stacked, and folium.heat
 class Plot:
@@ -13,130 +14,8 @@ class Plot:
     """
     def __init__(self):
         pass
-    
-    def line_chart(self, series, x_label, y_label, title):
-        """
-        Plot a line chart.
 
-        Args:
-        series(pandas.series): Pandas series.
-        x_label (str): Label for the x-axis.
-        y_label (str): Label for the y-axis.
-        title (str): Title of the chart.
-
-        Returns:
-        plt.show()
-        """
-        # Need to import style first (as shown above).
-        style.use('fivethirtyeight')
-
-        # Figsize.
-        # Using series.plot show in Week 4 of learn material. 
-        plt.figure(figsize=(10, 6))
-        series.plot(kind='line', marker='o', color='orange')
-        
-        # Label and title.
-        # Needed to make them black on the white margin.
-        plt.xlabel(x_label, color='black')
-        plt.ylabel(y_label, color='black')
-        plt.title(title, color='black')
-
-        # Set the background color to black.
-        # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.gca.html helped a ton.. 
-        plt.gca().set_facecolor('black')
-
-        # Using all the years present for the xticks.
-        # Set the tick color to black.
-        # Needed to make them black on the white margin.
-        plt.xticks(series.index)
-        plt.tick_params(axis='x', colors='black')
-        plt.tick_params(axis='y', colors='black')
-        
-        # plt.show.
-        plt.show()  
-
-    def heatmap(self, data, x_label, y_label, title):
-        """
-        Plot a heatmap.
-
-        Args:
-        data (DataFrame, poss corr matrix): Data to be plotted as a heatmap.
-        x_label (str): Label for the x-axis.
-        y_label (str): Label for the y-axis.
-        title (str): Title of the chart.
-
-        Returns:
-        plt.show()
-        """
-        # Self explaintory - easy one
-        # Getting the data formated the right way is the hard one for the right corr matrix
-        plt.figure(figsize=(10, 6))
-        sns.heatmap(data)
-        plt.xlabel(x_label)
-        plt.ylabel(y_label)
-        plt.title(title)
-        plt.show()
-        
-    def heatmap(self, data, x_label, y_label, title):
-        """
-        Plot a boxplot.
-
-        Args:
-        data (DataFrame or Series): Data to be plotted as boxplot.
-        x_label (str): Label for the x-axis.
-        y_label (str): Label for the y-axis.
-        title (str): Title of the chart.
-
-        Returns:
-        plt.show()
-        """
-        # Self explaintory - easy one
-        plt.figure(figsize=(10, 6))
-        sns.boxplot(data)
-        plt.xlabel(x_label)
-        plt.ylabel(y_label)
-        plt.title(title)
-        plt.show()
-    
-    def stacked(self, series, x_label, y_label, title):
-        """
-        Plot a stacked bar chart.
-
-        Args:
-        series: Data to be plotted.
-        x_label (str): Label for the x-axis.
-        y_label (str): Label for the y-axis.
-        title (str): Title of the chart.
-
-        Returns:
-        plot
-        """
-        
-        # Figsize.
-        # Using series.plot show in Week 4 of learn material.  
-        plt.figure(figsize=(16, 12))
-        series.plot(kind='bar', stacked=True)
-
-        # Add lables and title.
-        plt.xlabel(x_label)
-        plt.ylabel(y_label)
-        plt.title(title)
-
-        # Roatate xticks.
-        plt.xticks(rotation= 45)
-
-        # Set the background color to black.
-        # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.gca.html helped a ton.. 
-        plt.gca().set_facecolor('black')
-
-        # Wanted to get the legend in the bottom left corner.. 
-        # https://stackoverflow.com/questions/25068384/bbox-to-anchor-and-loc-in-matplotlib
-        plt.legend(title='Method', bbox_to_anchor=(1.05, 0), loc='lower left')
-
-        # plt.show.
-        plt.show()
-        
-    def plot_residuals(merged_data):
+    def plot_residuals(self, merged_data):
         """
         Plots residuals against predicted values for a regression model on 'Amount_DAC' and 'Amount_GCF'.
     
@@ -146,7 +25,11 @@ class Plot:
         Returns:
         - None (shows the plot).
         """
-    
+        # https://towardsdatascience.com/how-to-use-residual-plots-for-regression-model-validation-c3c70e8ab378 
+
+        # https://stackoverflow.com/questions/13218461/predicting-values-using-an-ols-model-with-statsmodels
+
+        # needed to add that redline, just like we did in our exercises. 
         # Fit the regression model
         X = sm.add_constant(merged_data['Amount_DAC'])
         Y = merged_data['Amount_GCF']
@@ -164,7 +47,7 @@ class Plot:
         plt.show()
 
 
-    def bar_aid_to_niger(PG4, figsize=(16, 9), custom_colors=None):
+    def bar_fa(self, PG4, figsize=(16, 9), custom_colors=None):
         """
         Plot the total aid given to Niger by various countries over a specified period.
 
@@ -182,7 +65,36 @@ class Plot:
         PG4 = <your dataframe>
         plot_aid_to_niger(PG4)
         """
+        # So wanting to get total aid to niger for last 25/26 years from each country
+        # Sorting those for country name I just need to add across the DF. 
 
+        # Numbers werent formatting properly, instad of doing pd.display.options I just did a for loop for the numbers.
+        # This is so I can use the value in the call out boxes I plan to make. 
+
+        # Alot of fidding with this since i was orginally plotting on the same ax multiple times. 
+
+        # Doing the same thing as I did for the violin plot wanting the colors most
+        # closely associated to those countries. 
+
+        # After the feedback from the instructors the bubble chart was kinda lame. 
+        # Doing the same thing with a bar chart, looks alot cleaner. 
+        # Indicator Name is Country, Total Aid is new last summed column. 
+
+        # Keeping the green lettering theme. 
+
+        # Set the background color to grey.
+        # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.gca.html 
+
+
+        # Messed with a lot of things to make the format of the y axis correct
+        # Formatteer allows you to deal with the lettering which is nice. 
+
+
+        # This (after some research) is where I figuered out I was plotting multiple times
+        # I would have repeating y ticks and it was really driving me mad. 
+        # Long story short even with the formatter and lim adjustments, manually set the ticks using a list comp.
+        
+        
         # Calculate total aid for Niger
         PG4["Total_Aid_Niger"] = PG4.iloc[:, 1:-1].sum(axis=1)
 
@@ -217,11 +129,61 @@ class Plot:
         ax.set_ylim(0e7, 4e9)
         ax.set_xlim(-0.5, len(PG4) - 0.5)
         plt.xticks(rotation=45)
+        
+        #Text box for Total UK Aid. 
+        text_1 = f"Total Aid: {new[0]}"
+        plt.text(0.01, 0.047, text_1, transform=plt.gca().transAxes, fontsize=10,
+            verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+
+        #Text box for Total EU Aid.  
+        text_2 = f"Total Aid: {new[1]}"
+        plt.text(0.125, 0.868, text_2, transform=plt.gca().transAxes, fontsize=10,
+            verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+
+        #Text box for Total SK Aid. 
+        text_3 = f"Total Aid: {new[2]}"
+        plt.text(0.255, 0.035, text_3, transform=plt.gca().transAxes, fontsize=10,
+            verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+
+        #Text box for Total FR Aid. 
+        text_4 = f"Total Aid: {new[3]}"
+        plt.text(0.375, 0.525, text_4, transform=plt.gca().transAxes, fontsize=10,
+            verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+
+        #Text box for Total GER Aid. 
+        text_5 = f"Total Aid: {new[4]}"
+        plt.text(0.5, 0.285, text_5, transform=plt.gca().transAxes, fontsize=10,
+             verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+
+        #Text box for Total CAN Aid. 
+        text_6 = f"Total Aid: {new[5]}"
+        plt.text(0.628, 0.114, text_6, transform=plt.gca().transAxes, fontsize=10,
+             verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+
+        #Text box for Total US Aid. 
+        text_7 = f"Total Aid: {new[6]}"
+        plt.text(0.75, 0.49, text_7, transform=plt.gca().transAxes, fontsize=10,
+             verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+
+        #Text box for Total JPN Aid. 
+        text_8 = f"Total Aid: {new[7]}"
+        plt.text(0.87, 0.15, text_8, transform=plt.gca().transAxes, fontsize=10,
+             verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+
+        #Text box for Perspective Metrics (coming from world bank summaries). 
+        text_9 = """
+        Numbers for Perspective:
+        - Niger's Net ODA received, (2021 percentage of GCF): 43.18%
+        - Sub-Sahran Region, (2021 percentage of GCF): 13.7%
+        - Making Niger 10th Highest in Region for 2021.
+        """
+        plt.text(0.65, 0.98, text_9, transform=plt.gca().transAxes, fontsize=11,
+             verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
 
         # Display the plot
         plt.show()
 
-    def violin_gov_effectiveness(data, b_mean, m_mean, i_mean):
+    def violin_ge(self, data, b_mean, m_mean, i_mean):
         """
         Plot the Government Effectiveness Scores for various leaders using a violin plot.
 
@@ -234,7 +196,36 @@ class Plot:
         Returns:
         - None: The function displays a violin plot with information boxes using matplotlib and seaborn.
         """
-    
+        # Create the violin plot.
+        # I was trying to use niger colors, but it didnt really come out that well ..
+        # That organge is really light. 
+
+
+        # Figsize.
+
+
+        # Adding the new colors to the palette. 
+
+
+        # Set the background color to grey.
+        # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.gca.html 
+
+        # Add a text box with information.
+
+
+        # Add a text box for Leader 1 (use f string for mean).
+
+
+        # Add a text box for Leader 2 (use f string for mean).
+
+
+        # Add a text box for Leader 3 (use f string for mean).
+
+        # Add labels and title.
+        # Dont really want that y lable because the names are so long.
+
+
+        # Sticking with the green theme.    
         # Define colors for the plot
         new_colors = ['white', 'green', 'orange']
 
@@ -284,7 +275,7 @@ class Plot:
         # Display the plot
         plt.show()
         
-    def plot_niger_economic_indicators(df):
+    def plot_ei(self, df):
         """
         Plots the economic indicators for Niger as an area chart.
 
@@ -294,7 +285,35 @@ class Plot:
         Returns:
         None.
         """
+        # Set the 'Indicator Name' column as the index (optional but might help in chart labeling).
+        # This did end up helping btw .. 
 
+        # Transpose the DataFrame to make years as columns and indicators as rows.
+        # This was more cautionary than anything with that new set of index / could always flatten if needed.. 
+        # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.transpose.html
+
+        # Plot the area chart. 
+
+        # Yet another loop since im going through years again.. 
+        # Coloumns are the years and wanting to do each indicator by year. 
+        # Label was similiar to above but dont have to make it iloc[0] cause its not double nested.
+        # plt.fill_between is literally an area chart .. I searched for like two days for the keyword "area chart" .. 
+        # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.fill_between.html
+
+        # Labels w/ green theme.
+
+        # Set the background color to grey.
+        # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.gca.html 
+
+        # Alot of years so I can do the tilt.
+
+        # Still cant figure out what fancy box does? when I turn it on it looks the same..
+
+        # Needed to show that negative GDP and Inflation.
+        # Mainly so I can highlight why that is not good thing during the brief. 
+
+        # Add a text box with information.
+        # This was fun to mess with.  
         df.set_index('Indicator Name', inplace=True)
 
         df_transposed = df.T
@@ -339,7 +358,7 @@ class Plot:
 
         plt.show()
 
-    def plot_world_governance_indicators(df, indicator_codes):
+    def plot_wgi(self, df, indicator_codes):
         """
         Plots the world governance indicators for Niger as a line chart.
 
@@ -350,7 +369,36 @@ class Plot:
         Returns:
             None.
         """
+        # Now to plot the graph. 
+        # Use the style that I like.
 
+        # Figsize.
+
+        # For the line chart need each indicator code separate.
+        # Not to repeat codes.
+        # Using indicator code to cycle through.
+        
+        # X = Year, Y= Aggregated Indicator Scale.
+        # values.flatten for the list of values.
+        # https://pandas.pydata.org/pandas-docs/version/0.14.1/generated/pandas.Index.flatten.html 
+        # F string for label, used in last project.
+        # Will only be plotting 2000 on as it has complete data (which is why I have to slice it).
+        # Label needs to start at the first postion each iteration.
+
+        # Label and title. 
+        #Label for Coup: Change of Power.
+        #Set for empty lables.
+
+        #Label for Attempted Coup.
+        #Set for empty lables.
+
+        # Set the background color to grey.
+        # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.gca.html 
+
+        # Using all the years present for the xticks.
+        # Set the tick color to black.
+
+        # Show the legend.
         style.use('fivethirtyeight')
         plt.figure(figsize=(16, 9))
 
@@ -371,6 +419,68 @@ class Plot:
         plt.tick_params(axis='y', colors='black')
 
         plt.legend()
+        plt.show()
+        
+    def plot_regression(self, merged_data, title, xlabel, ylabel):
+        """
+        Plots a regression graph using seaborn and decorates it using matplotlib.
+
+        Args:
+        - merged_data (pd.DataFrame): DataFrame containing the data to be plotted.
+        - title (str): Title for the plot.
+        - xlabel (str): X-axis label.
+        - ylabel (str): Y-axis label.
+        - textbox_content (str): Text content for the textbox in the plot.
+
+        Returns:
+        - A formatted regression plot.
+        """
+        # Now to do the plot. 
+        # This really helped, just needed to do the subplots to make it work. 
+        # https://stackoverflow.com/questions/40511476/how-to-properly-use-funcformatterfunc 
+        # Now to do the plot. 
+        # This really helped, just needed to do the subplots to make it work. 
+        # https://stackoverflow.com/questions/40511476/how-to-properly-use-funcformatterfunc 
+        #  Needed the subplots for the func fomatter.
+        # https://www.geeksforgeeks.org/python-seaborn-regplot-method/
+        # https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_major_formatter.html
+        # Set the background color to grey.
+        # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.gca.html 
+        # Title and Lables, keeping it green.
+        #Text box for Summary Metrics. 
+        def billions(x, pos):
+            'The two args are the value and tick position'
+            return f'${x*1e-9:.1f}B'
+
+        formatter = FuncFormatter(billions)
+        fig, ax = plt.subplots(figsize=(16, 9))
+        sns.regplot(x='Amount_DAC', y='Amount_GCF', data=merged_data, ci=95, color='green', scatter_kws={'color':'orange'})
+        ax.xaxis.set_major_formatter(formatter)
+        ax.yaxis.set_major_formatter(formatter)
+        plt.gca().set_facecolor('grey')
+        plt.title(title, color='green')
+        plt.xlabel(xlabel, color='green')
+        plt.ylabel(ylabel, color='green')
+        
+        #Text box for Summary Metrics. 
+        text = """
+        In Perspective:
+
+        - R-squared (0.861): 
+        86.1% of the variance can be explained by Net Bilateral Aid Flows.
+
+        - F-statistic and Prob (F-statistic) (9.19e-12): 
+        The model is statistically significant. 
+
+        - Coef (const -4.749e+08 and Amount_DAC 5.3360): 
+        With no aid flow, the Gross Capital Formation is -4.749e+08.
+
+        - P>|t| (const and Amount_DAC) (<0.05):
+        Both intercept and slope are significantly different from zero.
+        """
+        plt.text(0.01, 0.98, text, transform=plt.gca().transAxes, fontsize=9,
+            verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+        
         plt.show()
 
 # Conditional check used to determine if the class/function is being run as a standalone program 

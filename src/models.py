@@ -5,12 +5,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
-class Model():
+class Model:
     
     def __init__(self) -> None:
         pass
     
-    def perform_regression(merged_data):
+    def perform_regression(self, merged_data):
         """
         Performs a linear regression on the merged_data dataframe using Amount_DAC as the independent variable
         and Amount_GCF as the dependent variable. 
@@ -19,9 +19,11 @@ class Model():
         - merged_data (pd.DataFrame): DataFrame with at least 'Amount_DAC' and 'Amount_GCF' columns.
 
         Returns:
-        - Regression results summary.
+        - Tuple of Regression results and its summary.
         """
-    
+        # Okay now I can do the model.
+        # Need to define my X and my y (AMOUNT DAC indy, AMOUNT GCF dependent..).
+        # https://www.statsmodels.org/stable/regression.html    
         # Defining X and y variables
         X = sm.add_constant(merged_data['Amount_DAC'])
         y = merged_data['Amount_GCF']
@@ -31,9 +33,9 @@ class Model():
         results = model.fit()
 
         # Return summary statistics of the regression model
-        return results.summary()
+        return X, results, results.summary()
     
-    def calculate_vif(X):
+    def calculate_vif(self, X):
         """
         Calculates the Variance Inflation Factor (VIF) for each column in the given DataFrame.
     
@@ -43,7 +45,8 @@ class Model():
         Returns:
         - v (pd.DataFrame): DataFrame containing variables and their respective VIF values.
         """
-    
+        # https://www.geeksforgeeks.org/detecting-multicollinearity-with-vif-python/
+        # https://towardsdatascience.com/targeting-multicollinearity-with-python-3bd3b4088d0b
         X = sm.add_constant(X)
     
         v = pd.DataFrame()
@@ -52,7 +55,7 @@ class Model():
     
         return v
     
-    def train_test_evaluate(merged_data):
+    def train_test_evaluate(self, merged_data):
         """
         Splits the data into training and test sets, fits a linear regression model using the training set,
         predicts on the test set, and prints the Mean Squared Error and Root MSE.
@@ -63,7 +66,11 @@ class Model():
         Returns:
         - None (prints MSE and Root MSE).
         """
-    
+        # Need to do the train test split stuff.
+        # https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html 
+        # similar to the exercises we did in class.
+        # Root MSE might help with my explination.
+        # Things are in billions too so might need to talk to that. 
         # Splitting data into training and test sets
         X_train, X_test, y_train, y_test = train_test_split(merged_data[['Amount_DAC']], merged_data['Amount_GCF'], test_size=0.2, random_state=42)
 
