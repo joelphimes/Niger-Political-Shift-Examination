@@ -253,7 +253,7 @@ Content Source: https://www.investopedia.com/terms/c/capital-formation.asp
 
 <img src="./img/PG6.png">
 
-Overall:\
+Overall --> \
 Simple Linear Regression Model:\
 This model aims to predict Niger's Gross Capital Formation (a critical economic indicator reflecting the country's investment health - USD) using Net Bilateral Aid Flows from DAC donors (USD), a measure of international financial support. The relationship between these two variables could provide insights into how foreign aid impacts Niger's economic health and, subsequently, its political stability. A strong correlation might suggest that changes in foreign aid influence Niger's economic and, potentially, political landscape.
 
@@ -263,17 +263,19 @@ The model results reveal a strong relationship between Net Bilateral Aid Flows f
 The residual analysis indicates that the model appears satisfactory, showing no significant non-linearity or heteroscedasticity concerns, while the presence of some outliers does not significantly affect the overall model performance. Multicollinearity is not an issue as the Variance Inflation Factor (VIF) for the predictor variable (Amount_DAC) is 1, signifying no correlation with other predictors. In cross-validation, the model's predictions exhibit a mean squared error (MSE) of 5.2248430324784666e+17 units squared and a root mean squared error (RMSE) of approximately 722,830,756.99 units. The interpretation of RMSE's adequacy should consider the scale of Gross Capital Formation (Amount_GCF). If typical values lie in the billions, the RMSE indicates a satisfactory model fit. Overall, these model insights provide solid information for understanding the relationship between Net Bilateral Aid Flows (USD) and Gross Capital Formation (USD) for Niger.
 
 Model Results:
-- R-squared: This value ranges from 0 to 1 and represents the proportion of the variance for the dependent variable (Gross Capital Formation) that's explained by the independent variable (Net Bilateral Aid Flows from DAC donors). Your R-squared is 0.861, which means that 86.1% of the variability in Gross Capital Formation can be explained by Net Bilateral Aid Flows. This is a high R-squared, indicating a good fit of the model to your data.
+- R-squared: This value ranges from 0 to 1 and represents the proportion of the variance for the dependent variable (Gross Capital Formation) that's explained by the independent variable (Net Bilateral Aid Flows from DAC donors). Your R-squared is 0.861, which means that 86.1% of the variability in Gross Capital Formation can be explained by Net Bilateral Aid Flows. This is a high R-squared, indicating a good fit of the model to the data.
 
 - Adj. R-squared: This is the R-squared value adjusted based on the number of predictors in the model. In this case, it is 0.855. It is a more accurate measure of the goodness-of-fit, especially when comparing models with different numbers of predictors.
 
-- F-statistic and Prob (F-statistic): The F-statistic is used to test the overall significance of the model. The null hypothesis would be that all of the regression coefficients are equal to zero. The Prob (F-statistic) is the probability that you would get the computed value of F if the null hypothesis were true. In this case, the p-value is extremely small (9.19e-12), suggesting that at least some of the regression coefficients are not zero, i.e., the independent variable does have an effect on the dependent variable.
+- F-statistic and Prob (F-statistic): The F-statistic is used to test the overall significance of the model. The null hypothesis would be that all of the regression coefficients are equal to zero. The Prob (F-statistic) is the probability that 'we' would get the computed value of F if the null hypothesis were true. In this case, the p-value is extremely small (9.19e-12), suggesting that at least some of the regression coefficients are not zero, i.e., the independent variable does have an effect on the dependent variable.
 
 - coef (const and Amount_DAC): The const coefficient is your Y-intercept. It means that when Net Bilateral Aid Flows are zero, the Gross Capital Formation is -4.749e+08. The Amount_DAC coefficient is the slope of your regression line. It means that for each unit increase in Net Bilateral Aid Flows, the Gross Capital Formation increases by 5.3360 units, on average.
 
 - P>|t| (const and Amount_DAC): These are the p-values associated with the null hypothesis that the respective coefficient is equal to zero (the variable has no effect). In both cases, the p-values are less than 0.05, suggesting that the intercept and slope are significantly different from zero.
 
 - [0.025 0.975]: These are the 95% confidence intervals for the coefficients. If the interval does not include zero, it suggests the coefficient is statistically significant at the 5% level. Both intervals for const and Amount_DAC do not include zero, so they are statistically significant.
+
+Content Source: https://www.geeksforgeeks.org/interpreting-the-results-of-linear-regression-using-ols-summary/
 
 Residual Analysis:
 - Overview: Residuals are the differences between the observed values and those predicted by a statistical model.
@@ -313,7 +315,7 @@ Cross-Validation Analysis:
 Content Source: https://www.statisticshowto.com/cross-validation-statistics/
 
 # Summary
-This presentation explores historical events and indicators contributing to Niger's political instability, including weak governance and economic challenges. It delves into nearly three decades of Niger's tumultuous journey, analyzing the impact of government, economic health, leadership regimes, and foreign aid. The findings highlight challenges and statistical significance in some categories, including political stability, financial vulnerabilities, and heavy reliance on foreign aid, providing possible insights as to why these shifts continue to happen in Niger every decade or so.
+The presentation delves deep into the historical events and trends that have shaped Niger's political instability, spotlighting decades marred by governance issues and economic setbacks. It highlights pivotal determinants such as political upheavals, financial frailties, and an entrenched reliance on foreign aid. These elements offer possible insights into the cyclical shifts plaguing Niger's political evolution.
 
 # Contact Information
 Thank you for your attention & time during the presentation.\
