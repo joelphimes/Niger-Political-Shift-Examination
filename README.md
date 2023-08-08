@@ -313,7 +313,7 @@ Content Source: https://www.statisticshowto.com/cross-validation-statistics/
 The presentation delves deep into the historical events and trends that have shaped Niger's political instability, spotlighting decades marred by governance issues and economic setbacks. It highlights pivotal determinants such as political upheavals, financial frailties, and an entrenched reliance on foreign aid. These elements offer possible insights into the cyclical shifts plaguing Niger's political evolution.
 
 # Contact Information
-Thank you for your attention & time during the presentation.\
+Thank you for your time & attention during the presentation.\
 \
 If you have further questions or want to explore the project in more detail, please get in touch with me. Here are my contact details:
 \
