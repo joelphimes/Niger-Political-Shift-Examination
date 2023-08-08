@@ -210,8 +210,9 @@ Additionally, the post hoc test TUKEY HSD (Honestly Significant Difference) can 
 
 <img src="./img/ANOVA_1.png">
 
-Findings:
+Findings-->
 
+ANOVA Testing:\
 Null Hypothesis (H0): The means of the different groups are equal. In other words, there is no effect of the factor on the dependent variable.
 
 Alternative Hypothesis (H1): At least one group's mean differs from the others.
@@ -220,14 +221,17 @@ ANOVA results suggest that the factor Regime has a statistically significant eff
 
 <img src="./img/ANOVA_2.png">
 
-Findings:
+Findings-->
 
+Tukey HSD Testing:\
 Null Hypothesis (H0): The means of the three groups being compared are equal.
 
 Alternative Hypothesis (H1): The means of the three groups being compared are unequal.
 When we reject the null hypothesis in the ANOVA, it does not tell us which groups are different. The Tukey HSD test helps us identify which specific group means are different from each other.
 
 Significant differences were found between "Ibrahim Bare Mainassara Regime" and both "Mahamadou Issoufou Regime" and "Mamadou Tandja Regime", while "Mahamadou Issoufou Regime" and "Mamadou Tandja Regime" did not significantly differ in their means.
+
+Content Source: https://www.statology.org/tukey-test-python/
 
 # Niger Foreign Aid: Uncover Data Points Related to Foreign Assistance. 
 
@@ -291,7 +295,7 @@ Multicollinearity Check:
 
 Content Source: https://www.analyticsvidhya.com/blog/2020/03/what-is-multicollinearity/
 
-Coss-Validation Analysis:
+Cross-Validation Analysis:
 - Overview: Cross-validation is a technique used to assess how a predictive model will generalize to an independent dataset. It involves dividing the dataset into multiple subsets and using these subsets to train and test the model iteratively.
 
 - MSE: On average, The model's predictions are 5.2248430324784666e+17 units squared away from the actual value.
