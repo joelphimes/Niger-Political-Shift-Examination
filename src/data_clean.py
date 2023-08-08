@@ -1,7 +1,8 @@
 import numpy as np
 import pandas as pd
 
-# Reads in file, describes, and cleans df.
+# Reads in file, describes, shows missing data, 
+# shows column feats, formats data. 
 class Clean:
     """Example Usage:
         cleaner = clean.Clean()
@@ -11,7 +12,7 @@ class Clean:
     def __init__(self):
         pass
     
-    # Read csv into data frame fucntion
+    # Read csv into data frame fucntion.
     def read_file(self, file_path):
         """
         Read a file and return a DataFrame based on the file extension.
@@ -28,7 +29,7 @@ class Clean:
             print("Error: Invalid file extension.")
             return None
 
-    # Different format for describe function
+    # Different format for describe function.
     def describe_dataframe(self, df):
         """
         Generate descriptive statistics for each numerical column in a Pandas DataFrame.
@@ -46,7 +47,7 @@ class Clean:
         output = df.describe()
         return output
 
-    # Find missing data and give some common analytics on those values 
+    # Find missing data and give some common analytics on those values. 
     def find_missing_data(self, df):
         """
         Find missing data in a Pandas DataFrame.
@@ -60,7 +61,7 @@ class Clean:
         missing_data = df.isnull().sum()
         return missing_data
 
-    # Get column and show feat(data type)
+    # Get column and show feat(data type).
     def get_column_features(self, df):
         """provides column dict listing and data type for pandas dataframe
 
@@ -77,7 +78,7 @@ class Clean:
             feats[c] = df[c].dtype 
         return feats
 
-    # Drops row with missing data, used in this case when data tht is na = scattered 
+    # Drops row with missing data, used in this case when data tht is scattered.
     def drop_rows_with_missing_data(self, df):
         """
         Drop rows with missing data from the given dataframe.
@@ -91,6 +92,7 @@ class Clean:
         df_without_missing = df.dropna()
         return df_without_missing
     
+    # Goal is to format the pvalues, espically the ones that are tiny.
     def formatted_pvalues(self, results):
         """
         Prints the formatted p-values from the regression results.
@@ -106,6 +108,7 @@ class Clean:
         pvalues = pd.Series(results.pvalues)
 
         # Format the p-values using the map method.
+        # that :.xf is going to determine on the size, could tweak each time.
         formatted_pvalues = pvalues.map('{:.11f}'.format)
 
         # Print the formatted p-values.

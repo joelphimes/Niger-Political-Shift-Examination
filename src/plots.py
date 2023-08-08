@@ -8,8 +8,8 @@ from matplotlib.ticker import FuncFormatter
 # Plot class for line, bar, heatmap, stacked, and folium.heat
 class Plot:
     """Example Usage:
-        plotter = functions.Plot()
-        plotter.line_chart(x_values, y_values, 'X', 'Y', 'Line Chart')
+        plotter = plots.Plot()
+        plotter.plot_residuals(merged_data)
         ^something like that for most of'em
     """
     def __init__(self):

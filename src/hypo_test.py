@@ -2,11 +2,17 @@ import statsmodels.api as sm
 from statsmodels.formula.api import ols
 from statsmodels.stats.multicomp import pairwise_tukeyhsd
 
+# Performs Hypothesis specfied tests (ANOVA, TUKEY HSD).
 class Hypothesis:
-    
+    """Example Usage:
+        h_tester = hypo_test.Hypothesis()
+        h_tester.perfrom_anova(df)
+        ^something like that for most of'em
+    """
     def __init__(self) -> None:
         pass
     
+    # Perfroms ANOVA on specfied data.
     def perform_anova(self, df):
         """
         Renames 'Indicator Value' column to 'Indicator_Value' (if present),
@@ -20,25 +26,23 @@ class Hypothesis:
         - None (prints ANOVA table).
         """
         # Took me like 2 hours, ANOVA OLS is not a fan on the spaces.. yikes.
-        # Use OLS on Indicator Value (in this case GOV Effect).
-        # Fit the Model. 
-        # Use stats.annova_lm. 
-        # https://www.statsmodels.org/stable/generated/statsmodels.stats.anova.anova_lm.html
-        # Print the ANOVA table. 
-        # Tried using pretty print on this and tabulate, no go. 
-        # I'll just throw it in excel. 
         # Rename the 'Indicator Value' column
         df.rename(columns={'Indicator Value': 'Indicator_Value'}, inplace=True)
 
         # Fit the OLS model
+        # Use OLS on Indicator Value (in this case GOV Effect).
         model = ols('Indicator_Value ~ C(Regime)', data=df).fit()
 
         # Obtain the ANOVA table
+        # https://www.statsmodels.org/stable/generated/statsmodels.stats.anova.anova_lm.html
         anova_table = sm.stats.anova_lm(model)
 
         # Print the ANOVA table
+        # Tried using pretty print on this and tabulate, no go. 
+        # I'll just throw it in excel. 
         print(anova_table)
 
+    # Performs HSD on specfied data to back up ANOVA.
     def perform_tukey_hsd(self, df):
         """
         Performs the Tukey HSD test on 'Indicator_Value' by the 'Regime' column and
@@ -50,24 +54,14 @@ class Hypothesis:
         Returns:
         - None (prints pairwise comparison results).
         """
-        # So from some light research the next logical step would be to see about the Tukey HSD.
-        # Null Hypothesis (H0): The means of the two groups being compared are equal.
-        # Alternative Hypothesis (H1): The means of the two groups being compared are not equal. 
-        # (import part right here) ANOVA does not tell us which groups are different. 
-        # The Tukey HSD test helps us identify which specific group means are different from each other.
 
-        # Good summary -->
-        # The Tukey HSD ("honestly significant difference" or "honest significant difference") test is a statistical tool used to determine 
-        # if the relationship between two sets of data is statistically significant – that is, whether there's a strong chance that an observed 
-        # numerical change in one value is causally related to an observed change in another value. 
-        # In other words, the Tukey test is a way to test an experimental hypothesis.
 
         # Perform multiple pairwise comparison (Tukey HSD)
-        # This already prints really lovely so no need to change it.  
-        # Perform multiple pairwise comparison (Tukey HSD)
+        # https://towardsdatascience.com/anova-tukey-test-in-python-b3082b6e6bda
         m_comp = pairwise_tukeyhsd(endog=df['Indicator_Value'], groups=df['Regime'], alpha=0.05)
     
         # Print the pairwise comparison results
+        # This already prints really lovely so no need to change it.  
         print(m_comp)
         
 # Conditional check used to determine if the class/function is being run as a standalone program 
