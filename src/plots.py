@@ -329,38 +329,8 @@ class Plot:
 
         # plt.show.
         plt.show()
-
-    def plot_residuals(self, merged_data):
-        """
-        Plots residuals against predicted values for a regression model on 'Amount_DAC' and 'Amount_GCF'.
-    
-        Args:
-        - merged_data (pd.DataFrame): DataFrame with at least 'Amount_DAC' and 'Amount_GCF' columns.
-    
-        Returns:
-        - None (shows the plot).
-        """
-        # https://towardsdatascience.com/how-to-use-residual-plots-for-regression-model-validation-c3c70e8ab378 
-
-        # https://stackoverflow.com/questions/13218461/predicting-values-using-an-ols-model-with-statsmodels
-
-        # needed to add that redline, just like we did in our exercises. 
-        # Fit the regression model
-        X = sm.add_constant(merged_data['Amount_DAC'])
-        Y = merged_data['Amount_GCF']
-        lm = sm.OLS(Y, X).fit()
-
-        # Calculate predicted values and residuals
-        merged_data['predicted_GCF'] = lm.predict(X)
-        merged_data['residuals'] = merged_data['Amount_GCF'] - merged_data['predicted_GCF']
-
-        # Plotting residuals against predicted values
-        sns.scatterplot(x='predicted_GCF', y='residuals', data=merged_data)
-        plt.xlabel('Predicted GCF')
-        plt.ylabel('Residuals')
-        plt.axhline(y=0, color='r', linestyle='--')
-        plt.show()
-
+        
+    # Plot regression model to show findings. 
     def plot_regression(self, merged_data, title, xlabel, ylabel):
         """
         Plots a regression graph using seaborn and decorates it using matplotlib.
@@ -374,29 +344,28 @@ class Plot:
 
         Returns:
         - A formatted regression plot.
-        """
-        # Now to do the plot. 
+        """ 
+        
         # This really helped, just needed to do the subplots to make it work. 
         # https://stackoverflow.com/questions/40511476/how-to-properly-use-funcformatterfunc 
-        # Now to do the plot. 
-        # This really helped, just needed to do the subplots to make it work. 
-        # https://stackoverflow.com/questions/40511476/how-to-properly-use-funcformatterfunc 
-        #  Needed the subplots for the func fomatter.
-        # https://www.geeksforgeeks.org/python-seaborn-regplot-method/
-        # https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_major_formatter.html
-        # Set the background color to grey.
-        # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.gca.html 
-        # Title and Lables, keeping it green.
-        #Text box for Summary Metrics. 
         def billions(x, pos):
             'The two args are the value and tick position'
             return f'${x*1e-9:.1f}B'
-
         formatter = FuncFormatter(billions)
+        
+        # Needed the subplots for the func fomatter.
         fig, ax = plt.subplots(figsize=(16, 9))
+        
+        # https://www.geeksforgeeks.org/python-seaborn-regplot-method/ 
         sns.regplot(x='Amount_DAC', y='Amount_GCF', data=merged_data, ci=95, color='green', scatter_kws={'color':'orange'})
+        
+        # https://matplotlib.org/stable/api/_as_gen/matplotlib.axis.Axis.set_major_formatter.html        
         ax.xaxis.set_major_formatter(formatter)
         ax.yaxis.set_major_formatter(formatter)
+        
+        # Set the background color to grey.
+        # https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.gca.html
+        # Title and Lables, keeping it green. 
         plt.gca().set_facecolor('grey')
         plt.title(title, color='green')
         plt.xlabel(xlabel, color='green')
@@ -421,6 +390,37 @@ class Plot:
         plt.text(0.01, 0.98, text, transform=plt.gca().transAxes, fontsize=9,
             verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
         
+        plt.show()
+
+    # Peform residual plot for regression model verfication. 
+    def plot_residuals(self, merged_data):
+        """
+        Plots residuals against predicted values for a regression model on 'Amount_DAC' and 'Amount_GCF'.
+    
+        Args:
+        - merged_data (pd.DataFrame): DataFrame with at least 'Amount_DAC' and 'Amount_GCF' columns.
+    
+        Returns:
+        - None (shows the plot).
+        """
+        
+        # https://towardsdatascience.com/how-to-use-residual-plots-for-regression-model-validation-c3c70e8ab378 
+        # Fit the regression model
+        X = sm.add_constant(merged_data['Amount_DAC'])
+        Y = merged_data['Amount_GCF']
+        lm = sm.OLS(Y, X).fit()
+
+        # Calculate predicted values and residuals
+        # https://stackoverflow.com/questions/13218461/predicting-values-using-an-ols-model-with-statsmodels
+        merged_data['predicted_GCF'] = lm.predict(X)
+        merged_data['residuals'] = merged_data['Amount_GCF'] - merged_data['predicted_GCF']
+
+        # Plotting residuals against predicted values
+        # needed to add that redline, just like we did in our exercises. 
+        sns.scatterplot(x='predicted_GCF', y='residuals', data=merged_data)
+        plt.xlabel('Predicted GCF')
+        plt.ylabel('Residuals')
+        plt.axhline(y=0, color='r', linestyle='--')
         plt.show()
 
 # Conditional check used to determine if the class/function is being run as a standalone program 
