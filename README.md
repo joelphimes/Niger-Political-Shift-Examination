@@ -68,13 +68,13 @@ Analysis:\
 As mentioned above, in 2023, Niger underwent a significant political shift that led to noticeable instability. Unraveling the factors driving this turbulence is vital for understanding Niger's trajectory and shaping policies that could foster stability in the region. This analysis revolves around six analytical goals:
 
 (1) Niger Governance: Examine Three World Governance Indicators from 1996 to 2022  (26 years).\
-By examining the World Governance Indicators for 26 years (1996-2022), This analysis seeks to understand how governance trends may have influenced the current political climate. This could highlight trend-based insights into the systematic weaknesses that shaped the 2023 instability.\
+By examining the World Governance Indicators for 26 years (1996-2022), This analysis seeks to understand how governance trends may have influenced the current political climate.\
 \
 (2) Niger Economic Health: Explore Economic Indicators over the specified time frame.\
-Economic indicators over the past decades are a barometer for a nation's prosperity and resilience. An in-depth exploration into these metrics can shed light on whether economic strains contributed to the political unrest.\
+Economic indicators over the past decades are a barometer for a nation's prosperity and resilience.\
 \
 (3) Niger Leadership: Highlight Leadership Regime Effectiveness.\
-Leadership plays a pivotal role in steering the direction of a nation. By highlighting the effectiveness of various regimes, this analysis aims to discern if leadership dynamics played a significant part in the recent disruptions.\
+Leadership plays a pivotal role in steering the direction of a nation.\
 \
 (4) Niger Leadership: ANOVA on Government Effectiveness.\
 Utilizing an Analysis of Variance (ANOVA) on government effectiveness, this goal aims to statistically determine if there were statistically significant variations in governance effectiveness over different leadership periods.\
@@ -97,9 +97,9 @@ Niger's recent political instability holds international implications, notably f
 Key Points:
 - “So what?”: Niger's significance to U.S. counterterrorism efforts in Africa lies in its cooperation, hosting U.S. drone bases, American Special Forces, and logistics experts engaged in operations against Boko Haram and ISIS affiliates.
 
-- Informed Decision-Making: Analyzing historical data on political stability, leadership, economic health, and reliance on foreign aid. Stakeholders can gain insights into the country's historical political landscape and how it may have contributed to the coup.
+- Informed Decision-Making for Foreign Policy: Analyzing historical data on political stability, leadership, economic health, and reliance on foreign aid. Stakeholders can gain insights into the country's historical political landscape and how it may have contributed to the coup.
 
-- Conflict Resolution: The data analysis can help identify potential triggers or contributing factors to political instability in Niger.
+- Conflict Resolution for the UN and DAC Participants: The data analysis can help identify potential triggers or contributing factors to political instability in Niger.
 
 Content Source: https://www.npr.org/2023/07/27/1190463279/niger-coup-us-counterterrorism-boko-haram-isis
 
@@ -137,7 +137,7 @@ Analysis:\
 The Worldwide Governance Indicators offer an aggregate/comprehensive lens into nations' governance quality, spanning six crucial dimensions. For Niger, three stand out: Political Stability (PV.EST), reflecting the nation's vulnerability to unrest and violence, has seen a negative trend, hinting at growing instability. The Control of Corruption (CC.EST), which gauges governmental integrity and mostly lingers in negative territory for Niger, points to sustained challenges in curbing corruption. Lastly, Government Effectiveness (GE.EST), a measure of bureaucratic competence and service delivery, oscillates but frequently remains negative, indicating persistent governmental inefficiencies. These insights, sourced from varied metrics such as public trust and infrastructure quality, illuminate the governance hurdles Niger has to deal with.
 
 - Political Stability (Indicator Code: PV.EST):
-    * Overall:  This indicator evaluates the likelihood of political instability, social unrest, and violence within a country. It reflects political stability and the absence of armed conflict or terrorism. A higher score implies a more secure and stable political environment, which is crucial for sustainable economic development and social progress.
+    * Overall: This indicator evaluates the likelihood of political instability, social unrest, and violence within a country. It reflects political stability and the absence of armed conflict or terrorism. A higher score implies a more secure and stable political environment, which is crucial for sustainable economic development and social progress.
     * The values for Political Stability range from positive 2.5 to negative 2.5.
     * Positive values (greater than 0) indicate better political stability, while negative values indicate a decline or deterioration in political stability.
     * For Niger, as the year progress, the values become increasingly negative, indicating a decline in political stability over time.
@@ -210,8 +210,6 @@ Additionally, the post hoc test TUKEY HSD (Honestly Significant Difference) can 
 
 <img src="./img/ANOVA_1.png">
 
-Findings-->
-
 ANOVA Testing:\
 Null Hypothesis (H0): The means of the different groups are equal. In other words, there is no effect of the factor on the dependent variable.
 
@@ -220,8 +218,6 @@ Alternative Hypothesis (H1): At least one group's mean differs from the others.
 ANOVA results suggest that the factor Regime has a statistically significant effect on the outcome variable (GE). The means of at least two of the Regime levels are significantly different from each other. (But which two levels?)
 
 <img src="./img/ANOVA_2.png">
-
-Findings-->
 
 Tukey HSD Testing:\
 Null Hypothesis (H0): The means of the three groups being compared are equal.
@@ -253,7 +249,6 @@ Content Source: https://www.investopedia.com/terms/c/capital-formation.asp
 
 <img src="./img/PG6.png">
 
-Overall --> \
 Simple Linear Regression Model:\
 This model aims to predict Niger's Gross Capital Formation (a critical economic indicator reflecting the country's investment health - USD) using Net Bilateral Aid Flows from DAC donors (USD), a measure of international financial support. The relationship between these two variables could provide insights into how foreign aid impacts Niger's economic health and, subsequently, its political stability. A strong correlation might suggest that changes in foreign aid influence Niger's economic and, potentially, political landscape.
 
