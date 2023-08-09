@@ -65,7 +65,7 @@ Content Source: https://www.aljazeera.com/news/2023/7/27/timeline-a-history-of-c
 Image Source:https://en.wikipedia.org/wiki/Coat_of_arms_of_Niger
 
 Analysis:\
-As mentioned above, in 2023, Niger underwent a significant political shift that led to noticeable instability. Unraveling the factors driving this turbulence is vital for understanding Niger's trajectory and shaping policies that could foster stability in the region. This analysis revolves around six analytical goals:
+As mentioned above, Niger underwent a significant political shift that led to noticeable instability. Unraveling the factors driving this turbulence is vital for understanding Niger's trajectory and shaping policies that could foster stability in the region. This analysis revolves around six analytical goals:
 
 (1) Niger Governance: Examine Three World Governance Indicators from 1996 to 2022  (26 years).\
 By examining the World Governance Indicators for 26 years (1996-2022), This analysis seeks to understand how governance trends may have influenced the current political climate.\
@@ -79,7 +79,7 @@ Leadership plays a pivotal role in steering the direction of a nation.\
 (4) Niger Leadership: ANOVA on Government Effectiveness.\
 Utilizing an Analysis of Variance (ANOVA) on government effectiveness, this goal aims to statistically determine if there were statistically significant variations in governance effectiveness over different leadership periods.\
 \
-(5) Niger Foreign Aid: Uncover Data Points related to Foreign Assistance.\
+(5) Niger Foreign Aid: Uncover Data Points Related to Foreign Assistance.\
 Foreign assistance can influence a country's politics as a stabilizing force or a potential source of conflict. By focusing on aid from some of the top countries, This endeavor can uncover if external monetary flows are a dependent part of stabilizing the Niger economy.\
 \
 (6) Niger Foreign Aid: Regression Model - DAC Flows & Niger GCF.\
@@ -110,7 +110,9 @@ Content Source: https://www.npr.org/2023/07/27/1190463279/niger-coup-us-countert
 Image Source:https://www.airforcetimes.com/news/your-air-force/2020/04/02/air-force-botched-building-its-new-air-base-in-africa/
 
 Analysis:\
-The dataset was curated from the World Bank to capture a 25/26 year snapshot, consisting of 1478 rows and 30 distinct columns, offering a comprehensive glimpse into Niger's evolving political and economic scenario. The most notable features encompass World Governance Indicators like Political Stability, Control of Corruption, Government Effectiveness, and crucial Economic Indicators such as Inflation, GDP, Unemployment, and Gross Capital Formation. Additionally, insights into Foreign Aid are represented through DAC Flows & Net ODA. Regarding data categorization, features are classified as either strings or objects, like the 'Indicator/Code,' or as floating numbers representing monetary values in USD, percentages, or aggregate indicators. Despite the expansive time frame, most data trimming significantly reduced data gaps, ensuring an almost seamless exploration of leadership periods. Nevertheless, any persisting missing data was prudently addressed, tailoring solutions to each analytical goal.
+The dataset was curated from the World Bank to capture a 25/26 year snapshot, consisting of 1478 rows and 30 distinct columns, offering a comprehensive glimpse into Niger's evolving political and economic scenario. The most notable features encompass World Governance Indicators like Political Stability, Control of Corruption, Government Effectiveness, and crucial Economic Indicators such as Inflation, GDP, Unemployment, and Gross Capital Formation. 
+
+Additionally, insights into Foreign Aid are represented through DAC Flows & Net ODA. Regarding data categorization, features are classified as either strings or objects, like the 'Indicator/Code,' or as floating numbers representing monetary values in USD, percentages, or aggregate indicators. Despite the expansive time frame, most data trimming significantly reduced data gaps, ensuring an almost seamless exploration of leadership periods. Nevertheless, any persisting missing data was prudently addressed, tailoring solutions to each analytical goal.
 
 Dataset: 
 - Trimmed down for 25/26 year time frame (1478 Rows, 30 Columns).
@@ -141,7 +143,7 @@ The Worldwide Governance Indicators offer an aggregate/comprehensive lens into n
     * The values for Political Stability range from positive 2.5 to negative 2.5.
     * Positive values (greater than 0) indicate better political stability, while negative values indicate a decline or deterioration in political stability.
     * For Niger, as the year progress, the values become increasingly negative, indicating a decline in political stability over time.
-    * Sources (6 reps - Comprised of the following categories): Orderly transfers, Armed conflict, Violent demonstrations, Social unrest, International tensions / terrorist threat HUM Political terror scale, IJT Security risk rating, IPD Intensity of internal conflicts: ethnic, religious or regional, Intensity of violent activities…of underground political organizations, Intensity of social conflicts (excluding conflicts relating to land), PRS Government stability, Internal conflict, External conflict, Ethnic tensions, WMO Protests and riots. 
+    * Sources (6 reps - Comprised of the following categories): Orderly transfers, Armed conflict, Violent demonstrations, Social unrest, International tensions / terrorist threat HUM Political terror scale, IJT Security risk rating, IPD Intensity of internal conflicts: ethnic, religious or regional, Intensity of violent activities of underground political organizations, Intensity of social conflicts (excluding conflicts relating to land), PRS Government stability, Internal conflict, External conflict, Ethnic tensions, WMO Protests, and riots. 
 
 - Control of Corruption (Indicator Code: CC.EST):
     * Overall: This indicator assesses the prevalence of corruption in public institutions and society. It reflects the level of integrity within the government and the effectiveness of anti-corruption efforts. Higher scores on this indicator indicate lower levels of corruption, which fosters trust in public institutions, encourages foreign investments and enhances overall governance and development.
@@ -227,6 +229,7 @@ Content Source: https://towardsdatascience.com/anova-test-with-python-cfbf401332
 Null Hypothesis (H0): The means of the three groups being compared are equal.
 
 Alternative Hypothesis (H1): The means of the three groups being compared are unequal.
+
 When we reject the null hypothesis in the ANOVA, it does not tell us which groups are different. The Tukey HSD test helps us identify which specific group means are different from each other.
 
 Significant differences were found between "Ibrahim Bare Mainassara Regime" and both "Mahamadou Issoufou Regime" and "Mamadou Tandja Regime", while "Mahamadou Issoufou Regime" and "Mamadou Tandja Regime" did not significantly differ in their means.
@@ -279,7 +282,7 @@ Content Source: https://www.geeksforgeeks.org/interpreting-the-results-of-linear
 # Residual Analysis
 - Overview: Residuals are the differences between the observed values and those predicted by a statistical model.
 
-- Nothing outstandingly nonlinear, Unequal Error (Heteroscedasticity).
+- Nothing outstandingly nonlinear or Unequal Error (Heteroscedasticity).
 
 - If the residuals are randomly scattered around zero, it suggests a good fit for the model.
 
