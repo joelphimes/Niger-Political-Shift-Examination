@@ -301,7 +301,7 @@ Content Source: https://www.analyticsvidhya.com/blog/2020/03/what-is-multicollin
 
 - MSE: On average, The model's predictions are 5.2248430324784666e+17 units squared away from the actual value.
 
-- RMSE: By taking the square root of the MSE, we get an error term that is in the same units as your original data.
+- RMSE: By taking the square root of the MSE, we get an error term that is in the same units as the original data.
 
 - In this case, your RMSE is approximately 722,830,756.99. This means that, on average, the model's predictions are about 722.83 million units away from the actual value.
 
