@@ -9,6 +9,7 @@ class Hypothesis:
         h_tester.perfrom_anova(df)
         ^something like that for most of'em
     """
+    
     def __init__(self) -> None:
         pass
     
@@ -25,6 +26,7 @@ class Hypothesis:
         Returns:
         - None (prints ANOVA table).
         """
+        
         # Took me like 2 hours, ANOVA OLS is not a fan on the spaces.. yikes.
         # Rename the 'Indicator Value' column
         df.rename(columns={'Indicator Value': 'Indicator_Value'}, inplace=True)
@@ -54,8 +56,7 @@ class Hypothesis:
         Returns:
         - None (prints pairwise comparison results).
         """
-
-
+        
         # Perform multiple pairwise comparison (Tukey HSD)
         # https://towardsdatascience.com/anova-tukey-test-in-python-b3082b6e6bda
         m_comp = pairwise_tukeyhsd(endog=df['Indicator_Value'], groups=df['Regime'], alpha=0.05)

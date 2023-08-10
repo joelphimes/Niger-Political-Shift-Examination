@@ -12,6 +12,7 @@ class Model:
         model_maker.perform_regression(data)
         ^something like that for most of'em
     """
+    
     def __init__(self) -> None:
         pass
     
@@ -27,6 +28,7 @@ class Model:
         Returns:
         - Tuple of X, regression results and its summary.
         """
+        
         # Need to define my X and my y (AMOUNT DAC indy, AMOUNT GCF dependent..).
         # https://www.statsmodels.org/stable/regression.html    
         X = sm.add_constant(merged_data['Amount_DAC'])
@@ -50,6 +52,7 @@ class Model:
         Returns:
         - v (pd.DataFrame): DataFrame containing variables and their respective VIF values.
         """
+        
         # Alot of good examples online for this.
         # https://www.geeksforgeeks.org/detecting-multicollinearity-with-vif-python/
         # https://towardsdatascience.com/targeting-multicollinearity-with-python-3bd3b4088d0b
@@ -71,6 +74,7 @@ class Model:
         Returns:
         - None (prints MSE and Root MSE).
         """
+        
         # Need to do the train test split stuff.
         # https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html 
         # similar to the exercises we did in class.

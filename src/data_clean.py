@@ -9,6 +9,7 @@ class Clean:
         cleaner.read_file(file_path)
         ^something like that for most of'em
     """
+    
     def __init__(self):
         pass
     
@@ -23,6 +24,7 @@ class Clean:
         Returns:
             pandas.DataFrame: DataFrame containing the file data.
         """
+        
         if file_path.endswith('.csv'):
             return pd.read_csv(file_path)
         else:
@@ -58,6 +60,7 @@ class Clean:
         Returns:
             pandas.DataFrame: DataFrame summarizing missing data.
         """
+        
         missing_data = df.isnull().sum()
         return missing_data
 
@@ -72,6 +75,7 @@ class Clean:
         Returns:
             dict: Dictionary containing column names as keys and their data types as values.
         """
+        
         # Want to make a dict for all the columns and their data types.
         feats = {}
         for c in df.columns:
@@ -89,6 +93,7 @@ class Clean:
         Returns:
             pandas.DataFrame: A new dataframe without the rows containing missing data.
         """
+        
         df_without_missing = df.dropna()
         return df_without_missing
     

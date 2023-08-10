@@ -12,6 +12,7 @@ class Plot:
         plotter.plot_residuals(merged_data)
         ^something like that for most of'em
     """
+    
     def __init__(self):
         pass
     
