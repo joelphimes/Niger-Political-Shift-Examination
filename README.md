@@ -317,6 +317,11 @@ Content Source: https://www.analyticsvidhya.com/blog/2020/03/what-is-multicollin
 Content Source: https://www.statisticshowto.com/cross-validation-statistics/
 
 # Summary
+
+<img src="./img/residual.png"> 
+
+Image Source: https://www.nbcnews.com/politics/national-security/coup-leaders-niger-grow-increasingly-defiant-us-pressure-rcna98915
+
 The presentation delves deep into the historical events and trends that have shaped Niger's political instability, spotlighting decades marred by governance issues and economic setbacks. It highlights pivotal determinants such as political upheavals, financial frailties, and an entrenched reliance on foreign aid. These elements offer possible insights into the cyclical shifts plaguing Niger's political evolution.
 
 # Contact Information
