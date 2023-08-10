@@ -282,7 +282,7 @@ Content Source: https://www.geeksforgeeks.org/interpreting-the-results-of-linear
 # Residual Analysis
 - Overview: Residuals are the differences between the observed values and those predicted by a statistical model.
 
-- Nothing outstandingly nonlinear or Unequal Error (Heteroscedasticity).
+- Nothing outstandingly nonlinear or unequal error (Heteroscedasticity).
 
 - If the residuals are randomly scattered around zero, it suggests a good fit for the model.
 
