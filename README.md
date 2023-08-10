@@ -271,7 +271,7 @@ Model Results:
 
 - F-statistic and Prob (F-statistic): The F-statistic is used to test the overall significance of the model. The null hypothesis would be that all of the regression coefficients are equal to zero. The Prob (F-statistic) is the probability that 'we' would get the computed value of F if the null hypothesis were true. In this case, the p-value is extremely small (9.19e-12), suggesting that at least some of the regression coefficients are not zero, i.e., the independent variable does have an effect on the dependent variable.
 
-- coef (const and Amount_DAC): The const coefficient is your Y-intercept. It means that when Net Bilateral Aid Flows are zero, the Gross Capital Formation is -4.749e+08. The Amount_DAC coefficient is the slope of your regression line. It means that for each unit increase in Net Bilateral Aid Flows, the Gross Capital Formation increases by 5.3360 units, on average.
+- coef (const and Amount_DAC): The const coefficient is your Y-intercept. It means that when Net Bilateral Aid Flows are zero, the Gross Capital Formation is -4.749e+08. The Amount_DAC coefficient is the slope of your regression line. It means that for each unit increase in Net Bilateral Aid Flows, the average Gross Capital Formation increases by 5.3360 units.
 
 - P>|t| (const and Amount_DAC): These are the p-values associated with the null hypothesis that the respective coefficient is equal to zero (the variable has no effect). In both cases, the p-values are less than 0.05, suggesting that the intercept and slope are significantly different from zero.
 
@@ -300,7 +300,7 @@ Content Source: https://www.scaler.com/topics/data-science/residual-analysis/
 Content Source: https://www.analyticsvidhya.com/blog/2020/03/what-is-multicollinearity/
 
 # Cross-Validation Analysis
-- Overview: Cross-validation is a technique used to assess how a predictive model will generalize to an independent dataset. It involves dividing the dataset into multiple subsets and using these subsets to train and test the model iteratively.
+- Overview: Cross-validation is a technique used to assess how a predictive model will generalize to an independent dataset. It involves dividing the Dataset into multiple subsets and using these subsets to train and test the model iteratively.
 
 - MSE: On average, The model's predictions are 5.2248430324784666e+17 units squared away from the actual value.
 
@@ -318,11 +318,11 @@ Content Source: https://www.statisticshowto.com/cross-validation-statistics/
 
 # Summary
 
-<img src="./img/residual.png"> 
+<img src="./img/niger-coup-23.jpg"> 
 
 Image Source: https://www.nbcnews.com/politics/national-security/coup-leaders-niger-grow-increasingly-defiant-us-pressure-rcna98915
 
-The presentation delves deep into the historical events and trends that have shaped Niger's political instability, spotlighting decades marred by governance issues and economic setbacks. It highlights pivotal determinants such as political upheavals, financial frailties, and an entrenched reliance on foreign aid. These elements offer possible insights into the cyclical shifts plaguing Niger's political evolution.
+The presentation delves into the historical events and trends that have shaped Niger's political instability, spotlighting decades marred by governance issues and economic setbacks. It highlights pivotal determinants such as political upheavals, financial frailties, and an entrenched reliance on foreign aid. These elements offer possible insights into the cyclical shifts plaguing Niger's political evolution.
 
 # Contact Information
 Thank you for your time & attention during the presentation.\
