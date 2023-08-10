@@ -267,7 +267,7 @@ The residual analysis indicates that the model appears satisfactory, showing no 
 Model Results:
 - R-squared: This value ranges from 0 to 1 and represents the proportion of the variance for the dependent variable (Gross Capital Formation) that's explained by the independent variable (Net Bilateral Aid Flows from DAC donors). Your R-squared is 0.861, which means that 86.1% of the variability in Gross Capital Formation can be explained by Net Bilateral Aid Flows. This is a high R-squared, indicating a good fit of the model to the data.
 
-- Adj. R-squared: This is the R-squared value adjusted based on the number of predictors in the model. In this case, it is 0.855. It is a more accurate measure of the goodness-of-fit, especially when comparing models with different numbers of predictors.
+- Adj. R-squared: This is the R-squared value adjusted based on the number of predictors in the model. In this case, it is 0.855. Which is a more accurate measure of the goodness-of-fit, especially when comparing models with different numbers of predictors.
 
 - F-statistic and Prob (F-statistic): The F-statistic is used to test the overall significance of the model. The null hypothesis would be that all of the regression coefficients are equal to zero. The Prob (F-statistic) is the probability that 'we' would get the computed value of F if the null hypothesis were true. In this case, the p-value is extremely small (9.19e-12), suggesting that at least some of the regression coefficients are not zero, i.e., the independent variable does have an effect on the dependent variable.
 
