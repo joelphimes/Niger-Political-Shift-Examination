@@ -140,7 +140,8 @@ class Plot:
              verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
 
         plt.show()
-        
+    
+    # Perfomr Violin of leaders avg GE rating.  
     def violin_ge(self, data, b_mean, m_mean, i_mean):
         """
         Plot the Government Effectiveness Scores for various leaders using a violin plot.
@@ -209,7 +210,8 @@ class Plot:
 
         # Display the plot
         plt.show()
-        
+    
+    # Determine the FA for specfied countries.  
     def bar_fa(self, PG4, figsize=(16, 9), custom_colors=None):
         """
         Plot the total aid given to Niger by various countries over a specified period.
