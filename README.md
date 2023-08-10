@@ -208,7 +208,7 @@ Content Source: https://www.britannica.com/biography/Mahamadou-Issoufou
 Analysis:\
 In the previous analysis of leadership, Ibrahim Bare Mainassara's governance displayed lower effectiveness compared to Mamadou Tandja and Mahamadou Issoufou, who exhibited relatively better government effectiveness despite facing political challenges. To ascertain the statistical significance of these government effectiveness averages, an ANOVA (Analysis of Variance) can be conducted. ANOVA is a statistical method used to compare means of three or more groups, determining if significant differences exist among them by assessing the variation between group means relative to the variation within the groups. 
 
-Additionally, the post hoc test TUKEY HSD (Honestly Significant Difference) can be employed after ANOVA to identify specific group means that differ significantly. By utilizing ANOVA and TUKEY HSD, researchers aimed to draw meaningful conclusions regarding the substantial variations in government effectiveness among these leaders and the impact of their governance styles despite challenging circumstances.
+Additionally, the post hoc test TUKEY HSD (Honestly Significant Difference) can be employed after ANOVA to identify specific group means that differ significantly. By utilizing ANOVA and TUKEY HSD, I aim to draw meaningful conclusions regarding the substantial variations in government effectiveness among these leaders and the impact of their governance styles despite challenging circumstances and different eras.
 
 # ANOVA Testing
 
