@@ -74,10 +74,10 @@ By examining the World Governance Indicators for 26 years (1996-2022), This anal
 Economic indicators over the past decades are a barometer for a nation's prosperity and resilience.\
 \
 (3) Niger Leadership: Highlight Leadership Regime Effectiveness.\
-Leadership plays a pivotal role in steering the direction of a nation.\
+Leadership plays a pivotal role in steering the direction of a nation. Using an aggregate rating, one can ascertain how different these leaders are compared to one another.\
 \
 (4) Niger Leadership: ANOVA on Government Effectiveness.\
-Utilizing an Analysis of Variance (ANOVA) on government effectiveness, this goal aims to statistically determine if there were statistically significant variations in governance effectiveness over different leadership periods.\
+Utilizing an Analysis of Variance (ANOVA) on government effectiveness, this goal aims to statistically determine if there were significant variations in governance effectiveness over different leadership periods.\
 \
 (5) Niger Foreign Aid: Uncover Data Points Related to Foreign Assistance.\
 Foreign assistance can influence a country's politics as a stabilizing force or a potential source of conflict. By focusing on aid from some of the top countries, This endeavor can uncover if external monetary flows are a dependent part of stabilizing the Niger economy.\
